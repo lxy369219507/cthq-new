@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Demo</title>
+
+  <link rel="stylesheet" href="//uilibs.qiniudn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="css/reset.css"/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <!--[if lt IE 9]>
+  <script src="//uilibs.qiniudn.com/html5/html5shiv.min.js"></script>
+  <script src="//uilibs.qiniudn.com/html5/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container">
+    <!--固定结构，样式就是最小化时候的图标 这里的data-target指向的是collapse-->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a>
+        <img src="images/logo.png" height="41" width="122">
+      </a>
+    </div>
+    <!--上面的data-target指向的是下面的导航栏，默认在768像素一下的时候是横向显示，小于768时隐藏，只有点击上面的button才会展开 -->
+    <div class="collapse navbar-collapse" id="navbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Wi-Fi</a></li>
+        <li><a href="#">Refill</a></li>
+        <li><a href="#">CellPhone</a></li>
+        <li><a href="#">Mobile Plan</a></li>
+        <li><a href="#">Data Plan</a></li>
+        <li><a href="#Cart"><span class="common cart"></span></a></li>
+        <li><a href="#Login" class="login_a"><span class="common login"></span>Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<script src="//uilibs.qiniudn.com/jquery/1.8.0/jquery.min.js"></script>
+<script src="//uilibs.qiniudn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//uilibs.qiniudn.com/seajs/2.3.0/sea.js"></script>
+<script>
+  seajs.use('./js/util');
+</script>
+</body>
+</html>
