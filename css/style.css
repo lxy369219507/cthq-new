@@ -1,32 +1,88 @@
-body{
-
+body {
+   background-color: #F6F5F5;
 }
 
-.common {
-    background-image: url("../images/common.png");
-    display: block;
+.pillbox{
+    border-radius: 5px;
+    border: 1px solid #DCDCDC;
 }
 
-.login {
-    background-position: -0px -214px;
-    width: 25px;
-    height: 18px;
+.pdt5 {
+    padding-top: 5px;
+}
+.pdt10 {
+    padding-top: 10px;
+}
+.pdt15 {
+    padding-top: 15px;
+}
+
+.pdl5{
+    padding-left: 5px;
+}
+.pdl10{
+    padding-left: 10px;
+}
+.pdl15{
+    padding-left: 15px;
+}
+
+.bd{
+    border: 1px solid #dcdcdc;
+}
+
+.bdr{
+    border-left: 1px solid #dcdcdc;
+    box-shadow: 2px 1px 3px #EEE;
+}
+
+
+.fc-green{
+    color:#9fd10e;
+}
+
+/*
+footer style
+*/
+footer {
+    padding-bottom: 60px;
+    padding-top: 5px;
+    background-color: #dcdcdc;
+}
+
+footer .line {
+    padding-top: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+    border-top: 1px dotted #6a6a6a;
+}
+
+footer ul {
+    margin: 0;
+    padding: 0;
+    clear: both;
+    list-style: none;
+}
+
+footer ul > li {
     display: block;
     float: left;
+    margin-right: 20px;
 }
 
-.login_a:hover:first-child {
-    background-position: -0px -183px;
+footer ul > li > a {
+    color: #333;
+    font-size: 18px;
 }
 
-.login_a:hover {
-    color: #9fd10e;
+/*
+Plan
+*/
+div.col-md-8.bdr{
+    background-color: #ffffff;
 }
 
-.cart {
-    background-position: -0px -93px;
-    width: 58px;
-    height: 20px;
-    display: block;
-    float: left;
+.btn-green{
+    background-color:#9fd10e;
 }
