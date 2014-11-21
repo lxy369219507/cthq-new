@@ -1,0 +1,27 @@
+.sp-cart-item{
+		display: block;
+}
+.sp-cart-item-name {
+		text-align: left;
+		font-size: 16px;
+}
+
+.sp-cart-item-price{
+		float:right;
+		text-align: right;
+		color: #9fd10e;
+		font-size: 20px;
+}
+
+.sp-cart-total{
+		float:right;
+}
+
+.sp-cart-total-label{
+		font-size:28px;
+}
+
+.sp-cart-total-money{
+		font-size: 24px;
+		color: #9fd10e;
+}

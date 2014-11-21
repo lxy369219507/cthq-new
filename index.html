@@ -1,188 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Demo</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Demo</title>
 
-  <link rel="stylesheet" href="//uilibs.qiniudn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
-  <link rel="stylesheet" href="css/reset.css"/>
-  <link rel="stylesheet" href="css/style.css"/>
-  <!--[if lt IE 9]>
-  <script src="//uilibs.qiniudn.com/html5/html5shiv.min.js"></script>
-  <script src="//uilibs.qiniudn.com/html5/respond.min.js"></script>
-  <![endif]-->
+    <link rel="stylesheet" href="//uilibs.qiniudn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <!--[if lt IE 9]>
+    <script src="//uilibs.qiniudn.com/html5/html5shiv.min.js"></script>
+    <script src="//uilibs.qiniudn.com/html5/respond.min.js"></script>
+    <![endif]-->
 </head>
 <body>
 <header>
-  <nav class="navbar navbar-default" role="navigation">
-    <div class="container">
-      <!--固定结构，样式就是最小化时候的图标 这里的data-target指向的是collapse-->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a href="#">
-          <img src="images/logo.png" height="41" width="122">
-        </a>
-      </div>
-      <!--上面的data-target指向的是下面的导航栏，默认在768像素一下的时候是横向显示，小于768时隐藏，只有点击上面的button才会展开 -->
-      <div class="collapse navbar-collapse" id="navbar">
-        <ul class="nav navbar-nav">
-          <li><a href="#">Wi-Fi</a></li>
-          <li><a href="#">Refill</a></li>
-          <li><a href="#">CellPhone</a></li>
-          <li><a href="#">Mobile Plan</a></li>
-          <li><a href="#">Data Plan</a></li>
-          <li><a href="#Cart"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
-          <li><a href="#Login" class="login_a"><span class="glyphicon glyphicon-user"></span> Login</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!--固定结构，样式就是最小化时候的图标 这里的data-target指向的是collapse-->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#">
+                    <img src="images/logo.png" height="41" width="122">
+                </a>
+            </div>
+            <!--上面的data-target指向的是下面的导航栏，默认在768像素一下的时候是横向显示，小于768时隐藏，只有点击上面的button才会展开 -->
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="wifi.html">Wi-Fi</a></li>
+                    <li><a href="refill.html">Refill</a></li>
+                    <li><a href="Phone.html">CellPhone</a></li>
+                    <li><a href="plan.html">Mobile Plan</a></li>
+                    <li><a href="dataplan.html">Data Plan</a></li>
+                    <li><a href="shoppingcart.html"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+                    <li><a href="login.html" class="login_a"><span class="glyphicon glyphicon-user"></span> Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 </header>
 <div class="container">
-  <div class="row">
-    <div class="col-md-12">
-      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-        </ol>
-
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
-          <div class="item active">
-            <img class="img-responsive" src="images/slide1.jpg" alt="...">
-          </div>
-          <div class="item">
-            <img class="img-responsive" src="images/slide2.jpg" alt="...">
-          </div>
-          <div class="item">
-            <img class="img-responsive" src="images/slide3.jpg" alt="...">
-          </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img class="img-responsive" src="images/slide1.jpg" alt="...">
+                    </div>
+                    <div class="item">
+                        <img class="img-responsive" src="images/slide2.jpg" alt="...">
+                    </div>
+                    <div class="item">
+                        <img class="img-responsive" src="images/slide3.jpg" alt="...">
+                    </div>
+                </div>
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
         </div>
-
-        <!-- Controls -->
-        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
     </div>
-  </div>
-
-  <div class="row pdt10">
-    <div class="col-md-3">
-      <div class="thumbnail">
-        <img class="" src="images/samsung2.jpeg"/>
-        <div class="caption text-center">
-          <h3>Huawei P7</h3>
-          <p>Screen Size:5.0 inch</p>
-          <p>Resolution:1920x1080</p>
-          <p>Processor:4-Cores</p>
-          <p>Battery:2500mAh</p>
+    <div class="row pdt10">
+        <div class="col-md-3 col-sm-6">
+            <div class="thumbnail">
+                <img class="" src="images/samsung2.jpeg"/>
+                <div class="caption text-center">
+                    <h3 class="fc-green">Huawei P7</h3>
+                    <p>Screen Size:5.0 inch</p>
+                    <p>Resolution:1920x1080</p>
+                    <p>Processor:4-Cores</p>
+                    <p>Battery:2500mAh</p>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="thumbnail">
-        <img class="" src="images/samsung2.jpeg"/>
-        <div class="caption text-center">
-          <h3>Huawei P7</h3>
-          <p>Screen Size:5.0 inch</p>
-          <p>Resolution:1920x1080</p>
-          <p>Processor:4-Cores</p>
-          <p>Battery:2500mAh</p>
+        <div class="col-md-3 col-sm-6">
+            <div class="thumbnail">
+                <img class="" src="images/samsung2.jpeg"/>
+                <div class="caption text-center">
+                    <h3 class="fc-green">Huawei P7</h3>
+                    <p>Screen Size:5.0 inch</p>
+                    <p>Resolution:1920x1080</p>
+                    <p>Processor:4-Cores</p>
+                    <p>Battery:2500mAh</p>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="thumbnail">
-        <img class="" src="images/samsung2.jpeg"/>
-        <div class="caption text-center">
-          <h3>Huawei P7</h3>
-          <p>Screen Size:5.0 inch</p>
-          <p>Resolution:1920x1080</p>
-          <p>Processor:4-Cores</p>
-          <p>Battery:2500mAh</p>
+        <div class="col-md-3 col-sm-6">
+            <div class="thumbnail">
+                <img class="" src="images/samsung2.jpeg"/>
+                <div class="caption text-center">
+                    <h3 class="fc-green">Huawei P7</h3>
+                    <p>Screen Size:5.0 inch</p>
+                    <p>Resolution:1920x1080</p>
+                    <p>Processor:4-Cores</p>
+                    <p>Battery:2500mAh</p>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="thumbnail">
-        <img class="" src="images/samsung2.jpeg"/>
-        <div class="caption text-center">
-          <h3>Huawei P7</h3>
-          <p>Screen Size:5.0 inch</p>
-          <p>Resolution:1920x1080</p>
-          <p>Processor:4-Cores</p>
-          <p>Battery:2500mAh</p>
+        <div class="col-md-3 col-sm-6">
+            <div class="thumbnail">
+                <img class="" src="images/samsung2.jpeg"/>
+                <div class="caption text-center">
+                    <h3 class="fc-green">Huawei P7</h3>
+                    <p>Screen Size:5.0 inch</p>
+                    <p>Resolution:1920x1080</p>
+                    <p>Processor:4-Cores</p>
+                    <p>Battery:2500mAh</p>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-
-  </div>
+</div>
 </div>
 <footer>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4">
-        <h3>Free Shipping</h3>
-
-        <p>24-48 hours for major cities</p>
-
-        <p>72 hours for most of the cities</p>
-      </div>
-      <div class="col-md-4">
-        <h3>No contracts</h3>
-
-        <p>Local rate, pay as you go</p>
-
-        <p>No international roaming charge</p>
-
-        <p>No domestic long distance charge</p>
-      </div>
-      <div class="col-md-4">
-        <h3>Robust Network</h3>
-
-        <p>4G LTE in major cities, speed up to 150 Mbps</p>
-
-        <p>Over 120,000 ChinaNet Wi-Fi hotspots</p>
-      </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h3>Free Shipping</h3>
+                <p>24-48 hours for major cities</p>
+                <p>72 hours for most of the cities</p>
+            </div>
+            <div class="col-md-4">
+                <h3>No contracts</h3>
+                <p>Local rate, pay as you go</p>
+                <p>No international roaming charge</p>
+                <p>No domestic long distance charge</p>
+            </div>
+            <div class="col-md-4">
+                <h3>Robust Network</h3>
+                <p>4G LTE in major cities, speed up to 150 Mbps</p>
+                <p>Over 120,000 ChinaNet Wi-Fi hotspots</p>
+            </div>
+        </div>
+        <div class="row line">
+            <div class="col-md-12 pdt10">
+                <ul>
+                    <li><a href="#">About China Telecom</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <!--<div class="col-md-6">-->
+            <!--<img class="img-responsive" src="images/friendlink.png">-->
+            <!--</div>-->
+            <div class="col-md-12 pdt10">
+                © 2014 China Telecom, Inc. All rights reserved [Telecommunications Business License: A2.B1.B2-20090001 ]
+                NO.ICP
+                : 0903192nes
+            </div>
+        </div>
     </div>
-    <div class="row line">
-      <div class="col-md-12 pdt10">
-        <ul>
-          <li><a href="#">About China Telecom</a></li>
-          <li><a href="#">Contact Us</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-        </ul>
-      </div>
-      <!--<div class="col-md-6">-->
-        <!--<img class="img-responsive" src="images/friendlink.png">-->
-      <!--</div>-->
-      <div class="col-md-12 pdt10">
-        © 2014 China Telecom, Inc. All rights reserved [Telecommunications Business License: A2.B1.B2-20090001 ] NO.ICP : 0903192nes
-      </div>
-    </div>
-  </div>
 </footer>
 <script src="//uilibs.qiniudn.com/jquery/1.8.0/jquery.min.js"></script>
 <script src="//uilibs.qiniudn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 <script src="//uilibs.qiniudn.com/seajs/2.3.0/sea.js"></script>
 <script>
-  seajs.use('./js/util');
+    seajs.use('./js/util');
+    seajs.use('./js/home');
 </script>
 </body>
 </html>

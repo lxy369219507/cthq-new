@@ -18,4 +18,10 @@ define(function(require, exports){
             }
         })
     });
+	$('#cart').mouseover(function(){
+		$('#items').show();
+	}).mouseout(function(){
+		$('#items').hide();
+	});
+
 });

@@ -1,88 +1,257 @@
 body {
-   background-color: #F6F5F5;
+		background-color: #F6F5F5;
 }
 
-.pillbox{
-    border-radius: 5px;
-    border: 1px solid #DCDCDC;
+.pd20{
+		padding:20px;
+}
+.pd40{
+		padding:20px;
+}
+.pd50{
+		padding:20px;
 }
 
 .pdt5 {
-    padding-top: 5px;
+		padding-top: 5px;
 }
+
 .pdt10 {
-    padding-top: 10px;
+		padding-top: 10px;
 }
+
 .pdt15 {
-    padding-top: 15px;
+		padding-top: 15px;
 }
 
-.pdl5{
-    padding-left: 5px;
-}
-.pdl10{
-    padding-left: 10px;
-}
-.pdl15{
-    padding-left: 15px;
+.pdl5 {
+		padding-left: 5px;
 }
 
-.bd{
-    border: 1px solid #dcdcdc;
+.pdl10 {
+		padding-left: 10px;
 }
 
-.bdr{
-    border-left: 1px solid #dcdcdc;
-    box-shadow: 2px 1px 3px #EEE;
+.pdl15 {
+		padding-left: 15px;
+}
+
+.mgt10 {
+		margin-top: 10px;
+}
+
+.mgt20 {
+		margin-top: 20px;
+}
+
+.mgt30 {
+		margin-top: 30px;
+}
+
+.mgt50 {
+		margin-top: 50px;
+}
+
+.mgt100 {
+		margin-top: 100px;
+}
+
+.mgl10 {
+		margin-left: 10px;
+}
+
+.mgl20 {
+		margin-left: 20px;
+}
+
+.mgl30 {
+		margin-left: 30px;
+}
+
+.mgb10 {
+		margin-bottom: 10px;
+}
+
+.mgb20 {
+		margin-bottom: 20px;
+}
+
+.mgb30 {
+		margin-bottom: 30px;
+}
+
+.mgb50 {
+		margin-bottom: 50px;
+}
+
+.bd {
+		border: 1px solid #dcdcdc;
+}
+
+.bdr {
+		border-left: 1px solid #dcdcdc;
+		box-shadow: 2px 1px 3px #EEE;
+}
+
+.bdt{
+		border-bottom: 1px dashed #dcdcdc;
+}
+
+.fc-green {
+		color: #9fd10e;
+}
+
+.bgc-green {
+		background-color: #9fd10e;
+}
+
+.bgc-white {
+		background-color: #fff;
+}
+
+.pillbox {
+		border-radius: 5px;
+		border: 1px solid #DCDCDC;
 }
 
 
-.fc-green{
-    color:#9fd10e;
+/*
+header
+*/
+header {
+		margin-bottom: 55px;
+}
+
+header .cart {
+		position: absolute;
+		top: 60px;
+		left: 20px;
+		display: none;
+		background-color: red;
+}
+
+@media (max-width: 768px) {
+		header .cart {
+				display: none;
+		}
 }
 
 /*
 footer style
 */
 footer {
-    padding-bottom: 60px;
-    padding-top: 5px;
-    background-color: #dcdcdc;
+		margin-top: 30px;
+		padding-bottom: 60px;
+		padding-top: 5px;
+		background-color: #dcdcdc;
 }
 
 footer .line {
-    padding-top: 15px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-
-    border-top: 1px dotted #6a6a6a;
+		padding-top: 15px;
+		margin-top: 5px;
+		margin-bottom: 5px;
+		border-top: 1px dotted #6a6a6a;
 }
 
 footer ul {
-    margin: 0;
-    padding: 0;
-    clear: both;
-    list-style: none;
+		margin: 0;
+		padding: 0;
+		clear: both;
+		list-style: none;
 }
 
 footer ul > li {
-    display: block;
-    float: left;
-    margin-right: 20px;
+		display: block;
+		float: left;
+		margin-right: 20px;
 }
 
 footer ul > li > a {
-    color: #333;
-    font-size: 18px;
+		color: #333;
+		font-size: 18px;
+}
+
+/*
+index
+*/
+.row > .col-md-3 {
+		cursor: pointer;
+}
+
+.pointer{
+		cursor: pointer;
+}
+.row > .col-md-3 > .thumbnail.active {
+		-moz-border-radius: 11px;
+		-webkit-border-radius: 11px;
+		border-radius: 11px;
+		-moz-box-shadow: 0px 0px 20px #000000;
+		-webkit-box-shadow: 0px 0px 20px #000000;
+		box-shadow: 0px 0px 20px #000000;
+}
+
+.row > .col-md-3 > dl.active {
+		-moz-border-radius: 6px;
+		-webkit-border-radius: 6px;
+		border-radius: 6px;
+		-moz-box-shadow: 0px 0px 10px #000000;
+		-webkit-box-shadow: 0px 0px 10px #000000;
+		box-shadow: 0px 0px 10px #000000;
 }
 
 /*
 Plan
 */
-div.col-md-8.bdr{
-    background-color: #ffffff;
+div.col-md-8 button {
+		height: auto;
+		bottom: 20px;
+		box-shadow: none;
 }
 
-.btn-green{
-    background-color:#9fd10e;
+div.col-md-4 ul {
+		margin: 0;
+		padding-left: 20px;
+}
+
+div.col-md-8 .title {
+		font-size: 20px;
+		font-weight: 700;
+		color: #000000;
+}
+
+div.col-md-8 .title.active {
+		color: #ffffff;
+}
+
+div.col-md-8 .plan-active {
+		background-color: #9fd10e;
+}
+
+.btn-green {
+		background-color: #9fd10e;
+}
+
+.payment-month{
+		width:30%;
+}
+.payment-year{
+		width:70%;
+}
+@media (max-width: 768px){
+		.payment-month{
+				width:100%;
+		}
+
+		.payment-year{
+				width:100%;
+		}
+}
+
+.login-code{
+		width: 40%;
+		padding-left:5px;
+}
+.login-code-input{
+		width: 60%;
+		float: left;
 }

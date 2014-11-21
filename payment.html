@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Demo</title>
+
+		<link rel="stylesheet" href="//uilibs.qiniudn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="css/font-awesome.min.css"/>
+		<link rel="stylesheet" href="css/reset.css"/>
+		<link rel="stylesheet" href="css/style.css"/>
+		<link rel="stylesheet" href="css/spcart.css"/>
+		<!--[if lt IE 9]>
+		<link rel="stylesheet" href="css/font-awesome-ie7.min.css"/>
+		<script src="//uilibs.qiniudn.com/html5/html5shiv.min.js"></script>
+		<script src="//uilibs.qiniudn.com/html5/respond.min.js"></script>
+
+		<![endif]-->
+</head>
+<body>
+<header>
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+				<div class="container">
+						<!--固定结构，样式就是最小化时候的图标 这里的data-target指向的是collapse-->
+						<div class="navbar-header">
+								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+										<span class="sr-only">Toggle navigation</span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+								</button>
+								<a href="index.html">
+										<img src="images/logo.png" height="41" width="122">
+								</a>
+						</div>
+						<!--上面的data-target指向的是下面的导航栏，默认在768像素一下的时候是横向显示，小于768时隐藏，只有点击上面的button才会展开 -->
+						<div class="collapse navbar-collapse" id="navbar">
+								<ul class="nav navbar-nav">
+										<li><a href="wifi.html">Wi-Fi</a></li>
+										<li><a href="refill.html">Refill</a></li>
+										<li><a href="Phone.html">CellPhone</a></li>
+										<li><a href="plan.html">Mobile Plan</a></li>
+										<li><a href="dataplan.html">Data Plan</a></li>
+										<li><a href="#Cart" id="cart"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a>
+
+												<div class="cart" id="items">
+														<ul>
+																<li>fdsfsdf</li>
+																<li>sdfsdf</li>
+																<li>sdfsdf</li>
+																<li>fdsfdsf</li>
+														</ul>
+												</div>
+										</li>
+										<li><a href="#Login" class="login_a"><span class="glyphicon glyphicon-user"></span> Login</a></li>
+								</ul>
+						</div>
+				</div>
+		</nav>
+</header>
+<div class="container">
+		<div class="panel panel-default">
+				<div class="panel-heading">
+						<p class="lead panel-title"><i class="icon-credit-card icon-2x"> PAYMENT</i></p>
+				</div>
+				<div class="panel-body">
+						<div class="row">
+								<div class="col-md-7">
+										<form role="form" action="">
+												<p class="lead col-md-12 bdt fc-green">Contact Email</p>
+												<div class="form-group col-md-6">
+														<label for="EmailAddress">Contact Email</label>
+														<input class="form-control" type="email" id="EmailAddress" name="EmailAddress"
+																					placeholder="Email Address"/>
+												</div>
+												<div class="form-group col-md-6">
+														<label for="ReEmailAddress">Re-enter Email Address</label>
+														<input class="form-control" type="email" id="ReEmailAddress" placeholder="Re-enter Email Address"/>
+												</div>
+												<p class="lead col-md-12 bdt fc-green mgt20">Credit/Debit Card Information</p>
+
+												<div class="form-group col-md-6">
+														<label for="FirstName">Credit/Debit Card First Name</label>
+														<input class="form-control" type="text" id="FirstName" name="FirstName" placeholder="First Name"/>
+												</div>
+												<div class="form-group col-md-6">
+														<label for="LastName">Credit/Debit Card Last Name</label>
+														<input class="form-control" type="text" id="LastName" name="LastName"
+																					placeholder="Last Name"/>
+												</div>
+												<div class="form-group col-md-6">
+														<label for="CardType">Credit Card Type</label>
+														<select class="form-control" name="CardType" id="CardType">
+																<option value="4">Visa</option>
+																<option value="5">MasterCard</option>
+																<option value="3">American Express</option>
+																<option value="6">Discover</option>
+																<option value="2">JCB</option>
+																<option value="7">Diners Club INT</option>
+																<option value="9">Carte Blanche</option>
+														</select>
+												</div>
+												<div class="form-group col-md-6">
+														<label for="CardNumber">Credit/Debit Card Number</label>
+														<input class="form-control" type="text" id="CardNumber" name="CardNumber" placeholder="Card Number"/>
+												</div>
+												<div class="form-group col-md-6">
+														<label for="Month" class="col-md-12">Card Expiration Date</label>
+														<select class="form-control col-md-2 payment-month" name="Month" id="Month">
+																<option value="01">01</option>
+																<option value="02">02</option>
+																<option value="03">03</option>
+																<option value="04">04</option>
+																<option value="05">05</option>
+																<option value="06">06</option>
+																<option value="07">07</option>
+																<option value="08">08</option>
+																<option value="09">09</option>
+																<option value="10">10</option>
+																<option value="11">11</option>
+																<option value="12">12</option>
+														</select>
+														<select class="form-control col-md-4 payment-year" name="Year" id="Year">
+																<option value="14">2014</option>
+																<option value="15">2015</option>
+																<option value="16">2016</option>
+																<option value="17">2017</option>
+																<option value="18">2018</option>
+																<option value="19">2019</option>
+																<option value="20">2020</option>
+																<option value="21">2021</option>
+																<option value="22">2022</option>
+																<option value="23">2023</option>
+																<option value="24">2024</option>
+																<option value="25">2025</option>
+														</select>
+												</div>
+
+												<p class="lead col-md-12 bdt fc-green mgt20">Billing Information
+												</p>
+												<div class="form-group col-md-6">
+														<label for="BillingAddress1">Billing Address Line1</label>
+														<input class="form-control" type="text" id="BillingAddress1" name="BillingAddress1" placeholder="Billing Address1"/>
+												</div>
+												<div class="form-group col-md-6">
+														<label for="BillingAddress2">Billing Address Line2</label>
+														<input class="form-control" type="text" id="BillingAddress2" name="BillingAddress2" placeholder="Billing Address2"/>
+												</div>
+												<div class="form-group col-md-6">
+														<label for="Country">Country</label>
+														<select class="form-control" name="Country" id="Country">
+																<option value="CN">China</option>
+														</select>
+												</div>
+												<div class="form-group col-md-6">
+														<label for="Region">State/Province</label>
+														<select class="form-control" name="Region" id="Region">
+																<option value="Anhui">Anhui</option>
+														</select>
+												</div>
+												<div class="form-group col-md-6">
+														<label for="City">City</label>
+														<input class="form-control" type="text" id="City" name="City" placeholder="City"/>
+												</div>
+												<div class="form-group col-md-6">
+														<label for="PostalCode">Postal Code</label>
+														<input class="form-control" type="text" id="PostalCode" name="PostalCode" placeholder="Postal Code"/>
+												</div>
+												<div class="checkbox col-md-12">
+														<label>
+																<input type="checkbox" checked="checked" value="1" name="PODF"> Save this payment information
+														</label>
+												</div>
+												<div class="form-group col-md-12">
+														<input type="button" class="btn btn-green" value="NEXT"
+																					id="shipping_btn">
+												</div>
+										</form>
+								</div>
+
+								<div class="col-md-4 col-md-offset-1 mgt20">
+										<div class="panel panel-default">
+												<div class="panel-heading">
+														<h3 class="panel-title fc-green"><span class="icon-shopping-cart icon-large"></span> Shopping Cart</h3>
+												</div>
+												<div class="panel-body">
+														<p class="sp-cart-item">
+																<span class="sp-cart-item-name">Cellphone Xiaolajiao LA5-W fdsfs fdsf</span>
+																<span class="sp-cart-item-price">$9.89 x 1</span>
+														</p>
+														<p class="sp-cart-item">
+																<span class="sp-cart-item-name">Wifi 2000</span>
+																<span class="sp-cart-item-price">$9.89 x 1</span>
+														</p>
+														<p class="sp-cart-item">
+																<span class="sp-cart-item-name">Wifi 2000</span>
+																<span class="sp-cart-item-price">$9.89 x 1</span>
+														</p>
+														<p class="sp-cart-item">
+																<span class="sp-cart-item-name">Wifi 2000</span>
+																<span class="sp-cart-item-price">$9.89 x 1</span>
+														</p>
+														<p class="bdt"></p>
+														<p class="sp-cart-total">
+																<span class="sp-cart-total-label">Total: </span>
+																<span class="sp-cart-total-money">$100.80</span>
+														</p>
+												</div>
+										</div>
+								</div>
+						</div>
+				</div>
+		</div>
+</div>
+<footer>
+		<div class="container">
+				<div class="row">
+						<div class="col-md-4">
+								<h3>Free Shipping</h3>
+
+								<p>24-48 hours for major cities</p>
+
+								<p>72 hours for most of the cities</p>
+						</div>
+						<div class="col-md-4">
+								<h3>No contracts</h3>
+
+								<p>Local rate, pay as you go</p>
+
+								<p>No international roaming charge</p>
+
+								<p>No domestic long distance charge</p>
+						</div>
+						<div class="col-md-4">
+								<h3>Robust Network</h3>
+
+								<p>4G LTE in major cities, speed up to 150 Mbps</p>
+
+								<p>Over 120,000 ChinaNet Wi-Fi hotspots</p>
+						</div>
+				</div>
+				<div class="row line">
+						<div class="col-md-12 pdt10">
+								<ul>
+										<li><a href="#">About China Telecom</a></li>
+										<li><a href="#">Contact Us</a></li>
+										<li><a href="#">Privacy Policy</a></li>
+								</ul>
+						</div>
+						<!--<div class="col-md-6">-->
+						<!--<img class="img-responsive" src="images/friendlink.png">-->
+						<!--</div>-->
+						<div class="col-md-12 pdt10">
+								© 2014 China Telecom, Inc. All rights reserved [Telecommunications Business License: A2.B1.B2-20090001 ]
+								NO.ICP
+								: 0903192nes
+						</div>
+				</div>
+		</div>
+</footer>
+<script src="//uilibs.qiniudn.com/jquery/1.8.0/jquery.min.js"></script>
+<script src="//uilibs.qiniudn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//uilibs.qiniudn.com/seajs/2.3.0/sea.js"></script>
+<script>
+		seajs.use('./js/util');
+		seajs.use('./js/plan');
+		seajs.use('./js/shopping', function (shopping) {
+				$('.btn-green').click(function () {
+						var id = $('#active_price').text();
+						shopping.moveBox($('#' + id));
+						$('#' + id).addClass('plan-active');
+				});
+		});
+</script>
+</body>
+</html>
