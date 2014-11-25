@@ -1,184 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="widtd=device-widtd, initial-scale=1">
-		<title>Shopping cart</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Shopping cart</title>
 
-		<link rel="stylesheet" href="//uilibs.qiniudn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
-		<link rel="stylesheet" href="css/reset.css"/>
-		<link rel="stylesheet" href="css/style.css"/>
-		<link rel="stylesheet" href="css/table.css"/>
-		<!--[if lt IE 9]>
-		<script src="//uilibs.qiniudn.com/html5/html5shiv.min.js"></script>
-		<script src="//uilibs.qiniudn.com/html5/respond.min.js"></script>
-		<![endif]-->
+	<link rel="stylesheet" href="//uilibs.qiniudn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="css/reset.css"/>
+	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/table.css"/>
+	<!--[if lt IE 9]>
+	<link rel="stylesheet" href="css/font-awesome-ie7.min.css"/>
+	<script src="//uilibs.qiniudn.com/html5/html5shiv.min.js"></script>
+	<script src="//uilibs.qiniudn.com/html5/respond.min.js"></script>
+	<![endif]-->
 </head>
 <body>
 <header>
-		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-				<div class="container">
-						<!--固定结构，样式就是最小化时候的图标 这里的data-target指向的是collapse-->
-						<div class="navbar-header">
-								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
-										<span class="sr-only">Toggle navigation</span>
-										<span class="icon-bar"></span>
-										<span class="icon-bar"></span>
-										<span class="icon-bar"></span>
-								</button>
-								<a href="index.html">
-										<img src="images/logo.png" height="41" widtd="122">
-								</a>
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class="container">
+			<!--固定结构，样式就是最小化时候的图标 这里的data-target指向的是collapse-->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="index.html">
+					<img src="images/logo.png" height="41" widtd="122">
+				</a>
+			</div>
+			<!--上面的data-target指向的是下面的导航栏，默认在768像素一下的时候是横向显示，小于768时隐藏，只有点击上面的button才会展开 -->
+			<div class="collapse navbar-collapse" id="navbar">
+				<ul class="nav navbar-nav">
+					<li><a href="wifi.html">Wi-Fi</a></li>
+					<li><a href="refill.html">Refill</a></li>
+					<li><a href="Phone.html">CellPhone</a></li>
+					<li><a href="plan.html">Mobile Plan</a></li>
+					<li><a href="dataplan.html">Data Plan</a></li>
+					<li><a href="shoppingcart.html" id="cart"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a>
+
+						<div class="cart" id="items">
+							<p>Wifi 200 X 1</p>
+
+							<p>Wifi 200 X 1</p>
+
+							<p>Wifi 200 X 1</p>
+
+							<p>Wifi 200 X 1</p>
+
+							<p><input type="button" class="btn btn-green" value="Shopping Cart"/></p>
 						</div>
-						<!--上面的data-target指向的是下面的导航栏，默认在768像素一下的时候是横向显示，小于768时隐藏，只有点击上面的button才会展开 -->
-						<div class="collapse navbar-collapse" id="navbar">
-								<ul class="nav navbar-nav">
-										<li><a href="wifi.html">Wi-Fi</a></li>
-										<li><a href="refill.html">Refill</a></li>
-										<li><a href="Phone.html">CellPhone</a></li>
-										<li><a href="plan.html">Mobile Plan</a></li>
-										<li><a href="dataplan.html">Data Plan</a></li>
-										<li><a href="shoppingcart.html" id="cart"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a>
-												<div class="cart" id="items">
-														<p>Wifi 200 X 1</p>
-														<p>Wifi 200 X 1</p>
-														<p>Wifi 200 X 1</p>
-														<p>Wifi 200 X 1</p>
-														<p><input type="button" class="btn btn-green" value="Shopping Cart"/></p>
-												</div>
-										</li>
-										<li><a href="login.html" class="login_a"><span class="glyphicon glyphicon-user"></span> Login</a></li>
-								</ul>
-						</div>
-				</div>
-		</nav>
+					</li>
+					<li><a href="login.html" class="login_a"><span class="glyphicon glyphicon-user"></span> Login</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
 </header>
 <div class="container">
-		<div class="row">
-				<div class="col-md-12">
-						<div class="panel panel-default">
-								<div class="panel-heading">
-										<h3 class="panel-title">My Shopping Cart</h3>
-								</div>
-								<div class="panel-body">
-										<table>
-												<thead>
-														<tr>
-																<th>Item</th>
-																<th>Unit Price</th>
-																<th>Quantity</th>
-																<th>Delete</th>
-																<th>Subtotal</th>
-														</tr>
-												</thead>
-												<tbody>
-												<tr>
-														<td>Wifi test test test test</td>
-														<td>9.18</td>
-														<td>1</td>
-														<td><a>Delete</a></td>
-														<td>Subtotal</td>
-												</tr>
-												<tr>
-														<td>Wifi</td>
-														<td>9.18</td>
-														<td>1</td>
-														<td><a>Delete</a></td>
-														<td>Subtotal</td>
-												</tr>
-												<tr>
-														<td>Wifi</td>
-														<td>9.18</td>
-														<td>1</td>
-														<td><a>Delete</a></td>
-														<td>Subtotal</td>
-												</tr>
-												<tr>
-														<td>Wifi</td>
-														<td>9.18</td>
-														<td>1</td>
-														<td><a>Delete</a></td>
-														<td>Subtotal</td>
-												</tr>
-												<tr>
-														<td>Wifi</td>
-														<td>9.18</td>
-														<td>1</td>
-														<td><a>Delete</a></td>
-														<td>Subtotal</td>
-												</tr>
-												</tbody>
-										</table>
-										<div class="row text-right">
-												<p class="col-md-11">
-														Total: <span style="color:#9fd10e; font-size:24px;">$1000</span>
-												</p>
-										</div>
-								</div>
-						</div>
-				</div>
+	<div class="row">
+		<div class="col-md-12">
+
 		</div>
+		<div class="col-md-12">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title"><i class="icon-shopping-cart icon-3x fc-green"> My Shopping Cart</i></h3>
+				</div>
+				<div class="panel-body">
+					<table>
+						<thead>
+						<tr>
+							<th>Item</th>
+							<th>Unit Price</th>
+							<th>Quantity</th>
+							<th>Delete</th>
+							<th>Subtotal</th>
+						</tr>
+						</thead>
+						<tbody id="shopping_itmes">
+						</tbody>
+					</table>
+					<div class="row text-right">
+						<p class="col-md-11">
+							Total: <span style="color:#9fd10e; font-size:24px;" id="totalMoney">$1000</span>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 <footer>
-		<div class="container">
-				<div class="row">
-						<div class="col-md-4">
-								<h3>Free Shipping</h3>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<h3>Free Shipping</h3>
 
-								<p>24-48 hours for major cities</p>
+				<p>24-48 hours for major cities</p>
 
-								<p>72 hours for most of tde cities</p>
-						</div>
-						<div class="col-md-4">
-								<h3>No contracts</h3>
+				<p>72 hours for most of tde cities</p>
+			</div>
+			<div class="col-md-4">
+				<h3>No contracts</h3>
 
-								<p>Local rate, pay as you go</p>
+				<p>Local rate, pay as you go</p>
 
-								<p>No international roaming charge</p>
+				<p>No international roaming charge</p>
 
-								<p>No domestic long distance charge</p>
-						</div>
-						<div class="col-md-4">
-								<h3>Robust Network</h3>
+				<p>No domestic long distance charge</p>
+			</div>
+			<div class="col-md-4">
+				<h3>Robust Network</h3>
 
-								<p>4G LTE in major cities, speed up to 150 Mbps</p>
+				<p>4G LTE in major cities, speed up to 150 Mbps</p>
 
-								<p>Over 120,000 ChinaNet Wi-Fi hotspots</p>
-						</div>
-				</div>
-				<div class="row line">
-						<div class="col-md-12 pdt10">
-								<ul>
-										<li><a href="#">About China Telecom</a></li>
-										<li><a href="#">Contact Us</a></li>
-										<li><a href="#">Privacy Policy</a></li>
-								</ul>
-						</div>
-						<!--<div class="col-md-6">-->
-						<!--<img class="img-responsive" src="images/friendlink.png">-->
-						<!--</div>-->
-						<div class="col-md-12 pdt10">
-								© 2014 China Telecom, Inc. All rights reserved [Telecommunications Business License: A2.B1.B2-20090001 ]
-								NO.ICP
-								: 0903192nes
-						</div>
-				</div>
+				<p>Over 120,000 ChinaNet Wi-Fi hotspots</p>
+			</div>
 		</div>
+		<div class="row line">
+			<div class="col-md-12 pdt10">
+				<ul>
+					<li><a href="#">About China Telecom</a></li>
+					<li><a href="#">Contact Us</a></li>
+					<li><a href="#">Privacy Policy</a></li>
+				</ul>
+			</div>
+			<!--<div class="col-md-6">-->
+			<!--<img class="img-responsive" src="images/friendlink.png">-->
+			<!--</div>-->
+			<div class="col-md-12 pdt10">
+				© 2014 China Telecom, Inc. All rights reserved [Telecommunications Business License: A2.B1.B2-20090001 ]
+				NO.ICP
+				: 0903192nes
+			</div>
+		</div>
+	</div>
 </footer>
+<div class="modal" tabindex="-1" role="dialog"
+		 aria-hidden="true" id="alert-modal">
+	<div class="modal-dialog modal-sm">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title">Alert</h4>
+			</div>
+			<div class="modal-body" id="alert-body"></div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="modal" tabindex="-1" role="dialog"
+		 aria-hidden="true" id="confirm-modal">
+	<div class="modal-dialog modal-sm">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title">Alert</h4>
+			</div>
+			<div class="modal-body" id="confirm-body"></div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+				<button type="button" class="btn btn-success">Ok</button>
+			</div>
+		</div>
+	</div>
+</div>
 <script src="//uilibs.qiniudn.com/jquery/1.8.0/jquery.min.js"></script>
 <script src="//uilibs.qiniudn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 <script src="//uilibs.qiniudn.com/seajs/2.3.0/sea.js"></script>
 <script>
-		seajs.use('./js/util');
-		seajs.use('./js/plan');
-		seajs.use('./js/shopping', function (shopping) {
-				$('.btn-green').click(function () {
-						var id = $('#active_price').text();
-						shopping.moveBox($('#' + id));
-						$('#' + id).addClass('plan-active');
-				});
-		});
+	seajs.use('./js/util');
+	seajs.use('./js/plan');
+	seajs.use('./js/jquery.cookie');
+	seajs.use('./js/shopping', function (shopping) {
+		shopping.init();
+//		$('.btn-green').click(function () {
+//			var id = $('#active_price').text();
+//			shopping.moveBox($('#' + id));
+//			$('#' + id).addClass('plan-active');
+//		});
+	});
 </script>
 </body>
 </html>

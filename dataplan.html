@@ -1,145 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Data Plan</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Data Plan</title>
 
-		<link rel="stylesheet" href="//uilibs.qiniudn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
-		<link rel="stylesheet" href="css/reset.css"/>
-		<link rel="stylesheet" href="css/style.css"/>
-		<!--[if lt IE 9]>
-		<script src="//uilibs.qiniudn.com/html5/html5shiv.min.js"></script>
-		<script src="//uilibs.qiniudn.com/html5/respond.min.js"></script>
-		<![endif]-->
+	<link rel="stylesheet" href="//uilibs.qiniudn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/reset.css"/>
+	<link rel="stylesheet" href="css/style.css"/>
+	<!--[if lt IE 9]>
+	<script src="//uilibs.qiniudn.com/html5/html5shiv.min.js"></script>
+	<script src="//uilibs.qiniudn.com/html5/respond.min.js"></script>
+	<![endif]-->
 </head>
 <body>
 <header>
-		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-				<div class="container">
-						<!--固定结构，样式就是最小化时候的图标 这里的data-target指向的是collapse-->
-						<div class="navbar-header">
-								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
-										<span class="sr-only">Toggle navigation</span>
-										<span class="icon-bar"></span>
-										<span class="icon-bar"></span>
-										<span class="icon-bar"></span>
-								</button>
-								<a href="index.html">
-										<img src="images/logo.png" height="41" width="122">
-								</a>
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class="container">
+			<!--固定结构，样式就是最小化时候的图标 这里的data-target指向的是collapse-->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="index.html">
+					<img src="images/logo.png" height="41" width="122">
+				</a>
+			</div>
+			<!--上面的data-target指向的是下面的导航栏，默认在768像素一下的时候是横向显示，小于768时隐藏，只有点击上面的button才会展开 -->
+			<div class="collapse navbar-collapse" id="navbar">
+				<ul class="nav navbar-nav">
+					<li><a href="wifi.html">Wi-Fi</a></li>
+					<li><a href="refill.html">Refill</a></li>
+					<li><a href="Phone.html">CellPhone</a></li>
+					<li><a href="plan.html">Mobile Plan</a></li>
+					<li class="active"><a href="dataplan.html">Data Plan</a></li>
+					<li><a href="shoppingcart.html" id="cart"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a>
+
+						<div class="cart" id="items">
+							<p>Wifi 200 X 1</p>
+
+							<p>Wifi 200 X 1</p>
+
+							<p>Wifi 200 X 1</p>
+
+							<p>Wifi 200 X 1</p>
+
+							<p><input type="button" class="btn btn-green" value="Shopping Cart"/></p>
 						</div>
-						<!--上面的data-target指向的是下面的导航栏，默认在768像素一下的时候是横向显示，小于768时隐藏，只有点击上面的button才会展开 -->
-						<div class="collapse navbar-collapse" id="navbar">
-								<ul class="nav navbar-nav">
-										<li><a href="wifi.html">Wi-Fi</a></li>
-										<li><a href="refill.html">Refill</a></li>
-										<li><a href="Phone.html">CellPhone</a></li>
-										<li><a href="plan.html">Mobile Plan</a></li>
-										<li class="active"><a href="dataplan.html">Data Plan</a></li>
-										<li><a href="shoppingcart.html" id="cart"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a>
-												<div class="cart" id="items">
-														<p>Wifi 200 X 1</p>
-														<p>Wifi 200 X 1</p>
-														<p>Wifi 200 X 1</p>
-														<p>Wifi 200 X 1</p>
-														<p><input type="button" class="btn btn-green" value="Shopping Cart"/></p>
-												</div>
-										</li>
-										<li><a href="login.html" class="login_a"><span class="glyphicon glyphicon-user"></span> Login</a></li>
-								</ul>
-						</div>
-				</div>
-		</nav>
+					</li>
+					<li><a href="login.html" class="login_a"><span class="glyphicon glyphicon-user"></span> Login</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
 </header>
 <div class="container">
-		<div class="row pillbox mgt10">
-		  <div class="col-md-8 bdr">
-						
-				</div>
-				<div class="col-md-4">
-						<div id="planaffix">
-								<h2>Select Plan</h2>
-								<p>$<span id="active_price">10</span> per month</p>
-								<p>
-								<ul>
-										<li>Unlimited 4G LTE data</li>
-										<li>Unlimited data & text in 120+ countries & destinations</li>
-								</ul>
-								</p>
-								<p>
-										<button class="btn btn-lg btn-green">Add to cart</button>
-								</p>
-						</div>
-				</div>
-		</div>
+	<div class="row pillbox mgt10">
+		<div class="col-md-8 bgc-white pd20">
+			<div class="row mgt20">
+				<button class="pillbox mgt10 mgl10 plan-active" style="width:10%;" id="2">
+					<span class="title active">A</span>
+				</button>
+			</div>
+			<div class="row">
+				<button class="pillbox mgt10 mgl10" style="width:20%;" id="3">
+					<span class="title">B</span>
+				</button>
+			</div>
+			<div class="row pdl10">
+				<p>Mobile Plan Information </p>
 
-		<div class="row pillbox bgc-white mgt10" style="height:400px;">
-				<div class="col-md-12"></div>
+				<p>Mobile Plan Information </p>
+
+				<p>Mobile Plan Information </p>
+
+				<p>Mobile Plan Information </p>
+			</div>
 		</div>
-		<div class="row pillbox bgc-white mgt10" style="height:400px;"></div>
-		<div class="row pillbox bgc-white mgt10" style="height:400px;"></div>
+		<div class="col-md-4">
+			<div id="planaffix">
+				<h2>Select Plan</h2>
+
+				<p>$<span id="active_price">10</span> per month</p>
+				<p>
+				<ul>
+					<li>Unlimited 4G LTE data</li>
+					<li>Unlimited data & text in 120+ countries & destinations</li>
+				</ul>
+				</p>
+				<p>
+					<button class="btn btn-lg btn-green">Add to cart</button>
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="row pillbox bgc-white mgt10" style="height:400px;">
+		<div class="col-md-12"></div>
+	</div>
+	<div class="row pillbox bgc-white mgt10" style="height:400px;"></div>
+	<div class="row pillbox bgc-white mgt10" style="height:400px;"></div>
 </div>
 <footer>
-		<div class="container">
-				<div class="row">
-						<div class="col-md-4">
-								<h3>Free Shipping</h3>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<h3>Free Shipping</h3>
 
-								<p>24-48 hours for major cities</p>
+				<p>24-48 hours for major cities</p>
 
-								<p>72 hours for most of the cities</p>
-						</div>
-						<div class="col-md-4">
-								<h3>No contracts</h3>
+				<p>72 hours for most of the cities</p>
+			</div>
+			<div class="col-md-4">
+				<h3>No contracts</h3>
 
-								<p>Local rate, pay as you go</p>
+				<p>Local rate, pay as you go</p>
 
-								<p>No international roaming charge</p>
+				<p>No international roaming charge</p>
 
-								<p>No domestic long distance charge</p>
-						</div>
-						<div class="col-md-4">
-								<h3>Robust Network</h3>
+				<p>No domestic long distance charge</p>
+			</div>
+			<div class="col-md-4">
+				<h3>Robust Network</h3>
 
-								<p>4G LTE in major cities, speed up to 150 Mbps</p>
+				<p>4G LTE in major cities, speed up to 150 Mbps</p>
 
-								<p>Over 120,000 ChinaNet Wi-Fi hotspots</p>
-						</div>
-				</div>
-				<div class="row line">
-						<div class="col-md-12 pdt10">
-								<ul>
-										<li><a href="#">About China Telecom</a></li>
-										<li><a href="#">Contact Us</a></li>
-										<li><a href="#">Privacy Policy</a></li>
-								</ul>
-						</div>
-						<!--<div class="col-md-6">-->
-						<!--<img class="img-responsive" src="images/friendlink.png">-->
-						<!--</div>-->
-						<div class="col-md-12 pdt10">
-								© 2014 China Telecom, Inc. All rights reserved [Telecommunications Business License: A2.B1.B2-20090001 ]
-								NO.ICP
-								: 0903192nes
-						</div>
-				</div>
+				<p>Over 120,000 ChinaNet Wi-Fi hotspots</p>
+			</div>
 		</div>
+		<div class="row line">
+			<div class="col-md-12 pdt10">
+				<ul>
+					<li><a href="#">About China Telecom</a></li>
+					<li><a href="#">Contact Us</a></li>
+					<li><a href="#">Privacy Policy</a></li>
+				</ul>
+			</div>
+			<!--<div class="col-md-6">-->
+			<!--<img class="img-responsive" src="images/friendlink.png">-->
+			<!--</div>-->
+			<div class="col-md-12 pdt10">
+				© 2014 China Telecom, Inc. All rights reserved [Telecommunications Business License: A2.B1.B2-20090001 ]
+				NO.ICP
+				: 0903192nes
+			</div>
+		</div>
+	</div>
 </footer>
 <script src="//uilibs.qiniudn.com/jquery/1.8.0/jquery.min.js"></script>
 <script src="//uilibs.qiniudn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 <script src="//uilibs.qiniudn.com/seajs/2.3.0/sea.js"></script>
 <script>
-		seajs.use('./js/util');
-		seajs.use('./js/plan');
-		seajs.use('./js/shopping', function (shopping) {
-				$('.btn-green').click(function () {
-						var id = $('#active_price').text();
-						shopping.moveBox($('#' + id));
-						$('#' + id).addClass('plan-active');
-				});
-		});
+	seajs.use('./js/util');
+	seajs.use('./js/plan');
+	seajs.use('./js/shopping', function (shopping) {
+//		$('.btn-green').click(function () {
+//			var id = $('#active_price').text();
+//			shopping.moveBox($('#' + id));
+//			$('#' + id).addClass('plan-active');
+//		});
+	});
 </script>
 </body>
 </html>

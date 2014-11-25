@@ -1,235 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Demo</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Demo</title>
 
-		<link rel="stylesheet" href="//uilibs.qiniudn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
-		<link rel="stylesheet" href="css/reset.css"/>
-		<link rel="stylesheet" href="css/style.css"/>
-		<!--[if lt IE 9]>
-		<script src="//uilibs.qiniudn.com/html5/html5shiv.min.js"></script>
-		<script src="//uilibs.qiniudn.com/html5/respond.min.js"></script>
-		<![endif]-->
+	<link rel="stylesheet" href="//uilibs.qiniudn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/reset.css"/>
+	<link rel="stylesheet" href="css/style.css"/>
+	<!--[if lt IE 9]>
+	<script src="//uilibs.qiniudn.com/html5/html5shiv.min.js"></script>
+	<script src="//uilibs.qiniudn.com/html5/respond.min.js"></script>
+	<![endif]-->
 </head>
 <body>
 <header>
-		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-				<div class="container">
-						<!--固定结构，样式就是最小化时候的图标 这里的data-target指向的是collapse-->
-						<div class="navbar-header">
-								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
-										<span class="sr-only">Toggle navigation</span>
-										<span class="icon-bar"></span>
-										<span class="icon-bar"></span>
-										<span class="icon-bar"></span>
-								</button>
-								<a href="index.html">
-										<img src="images/logo.png" height="41" width="122">
-								</a>
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class="container">
+			<!--固定结构，样式就是最小化时候的图标 这里的data-target指向的是collapse-->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="index.html">
+					<img src="images/logo.png" height="41" width="122">
+				</a>
+			</div>
+			<!--上面的data-target指向的是下面的导航栏，默认在768像素一下的时候是横向显示，小于768时隐藏，只有点击上面的button才会展开 -->
+			<div class="collapse navbar-collapse" id="navbar">
+				<ul class="nav navbar-nav">
+					<li><a href="wifi.html">Wi-Fi</a></li>
+					<li><a href="refill.html">Refill</a></li>
+					<li><a href="Phone.html">CellPhone</a></li>
+					<li class="active"><a href="plan.html">Mobile Plan</a></li>
+					<li><a href="dataplan.html">Data Plan</a></li>
+					<li><a href="shoppingcart.html" id="cart"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a>
+
+						<div class="cart" id="items">
+							<p>Wifi 200 X 1</p>
+
+							<p>Wifi 200 X 1</p>
+
+							<p>Wifi 200 X 1</p>
+
+							<p>Wifi 200 X 1</p>
+
+							<p><input type="button" class="btn btn-green" value="Shopping Cart"/></p>
 						</div>
-						<!--上面的data-target指向的是下面的导航栏，默认在768像素一下的时候是横向显示，小于768时隐藏，只有点击上面的button才会展开 -->
-						<div class="collapse navbar-collapse" id="navbar">
-								<ul class="nav navbar-nav">
-										<li><a href="wifi.html">Wi-Fi</a></li>
-										<li><a href="refill.html">Refill</a></li>
-										<li><a href="Phone.html">CellPhone</a></li>
-										<li class="active"><a href="plan.html">Mobile Plan</a></li>
-										<li><a href="dataplan.html">Data Plan</a></li>
-										<li><a href="shoppingcart.html" id="cart"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a>
-												<div class="cart" id="items">
-														<p>Wifi 200 X 1</p>
-														<p>Wifi 200 X 1</p>
-														<p>Wifi 200 X 1</p>
-														<p>Wifi 200 X 1</p>
-														<p><input type="button" class="btn btn-green" value="Shopping Cart"/></p>
-												</div>
-										</li>
-										<li><a href="login.html" class="login_a"><span class="glyphicon glyphicon-user"></span> Login</a></li>
-								</ul>
-						</div>
-				</div>
-		</nav>
+					</li>
+					<li><a href="login.html" class="login_a"><span class="glyphicon glyphicon-user"></span> Login</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
 </header>
 <div class="container">
-		<div>
-				<h1>
-						Simple Choice Plan
-				</h1>
-				<h5>Stay connected on our super-fast nationwide network.</h5>
-		</div>
-		<div class="row pillbox" id="plans">
-				<div class="col-md-8 bgc-white pd20">
-						<div class="row mgt20">
-								<button class="col-md-3 col-xs-1 pillbox mgt10 mgl10 plan-active" id="2">
-										<span class="title active">A</span>
-								</button>
-						</div>
-						<div class="row">
-								<button class="col-md-4 col-xs-2 pillbox mgt10 mgl10" id="3">
-										<span class="title">B</span>
-								</button>
-						</div>
-						<div class="row">
-								<button class="col-md-5 col-xs-3 pillbox mgt10 mgl10" id="4">
-										<span class="title">C</span>
-								</button>
-						</div>
-						<div class="row">
-								<button class="col-md-6 col-xs-4 pillbox mgt10 mgl10" id="5">
-										<span class="title">D</span>
-								</button>
-						</div>
-						<div class="row pdl10">
-  						<p>Mobile Plan Information </p>
-  						<p>Mobile Plan Information </p>
-  						<p>Mobile Plan Information </p>
-  						<p>Mobile Plan Information </p>
-						</div>
-				</div>
-				<div class="col-md-4">
-						<div id="planaffix">
-								<h2>Select Plan</h2>
-								<p>$<span id="active_price">10</span> per month</p>
-								<p>
-								<ul>
-										<li>Unlimited talk, text & data while on our network</li>
-										<li>Unlimited 4G LTE data</li>
-										<li>Unlimited data & text in 120+ countries & destinations</li>
-								</ul>
-								</p>
-								<p>
-										<button class="btn btn-lg btn-green">Add to cart</button>
-								</p>
-						</div>
-				</div>
-		</div>
-		<div class="row pillbox mgt30 bgc-white" id="description">
-				<div class="col-md-5 col-md-offset-1 pd20">
-						<dl>
-								<dt>Mobile Plan</dt>
-								<dd>Mobile Plan Information</dd>
-						</dl>
-						<dl>
-								<dt>Mobile Plan</dt>
-								<dd>Mobile Plan Information</dd>
-						</dl>
-						<dl>
-								<dt>Mobile Plan</dt>
-								<dd>Mobile Plan Information</dd>
-						</dl>
-						<dl>
-								<dt>Mobile Plan</dt>
-								<dd>Mobile Plan Information</dd>
-						</dl>
-						<dl>
-								<dt>Mobile Plan</dt>
-								<dd>Mobile Plan Information</dd>
-						</dl>
-				</div>
-				<div class="col-md-5 col-md-offset-1 pd20">
-						<dl>
-								<dt>Mobile Plan</dt>
-								<dd>Mobile Plan Information</dd>
-						</dl>
-						<dl>
-								<dt>Mobile Plan</dt>
-								<dd>Mobile Plan Information</dd>
-						</dl>
-						<dl>
-								<dt>Mobile Plan</dt>
-								<dd>Mobile Plan Information</dd>
-						</dl>
-						<dl>
-								<dt>Mobile Plan</dt>
-								<dd>Mobile Plan Information</dd>
-						</dl>
-						<dl>
-								<dt>Mobile Plan</dt>
-								<dd>Mobile Plan Information</dd>
-						</dl>
-				</div>
-		</div>
+	<div>
+		<h1>
+			Simple Choice Plan
+		</h1>
+		<h5>Stay connected on our super-fast nationwide network.</h5>
+	</div>
+	<div class="row pillbox" id="plans">
+		<div class="col-md-8 bgc-white pd20">
+			<div class="row mgt20">
+				<button class="pillbox mgt10 mgl10 plan-active" style="width:10%;" id="2">
+					<span class="title active">A</span>
+				</button>
+			</div>
+			<div class="row">
+				<button class="pillbox mgt10 mgl10" style="width:20%;" id="3">
+					<span class="title">B</span>
+				</button>
+			</div>
+			<div class="row">
+				<button class="pillbox mgt10 mgl10" style="width:30%;" id="4">
+					<span class="title">C</span>
+				</button>
+			</div>
+			<div class="row">
+				<button class="pillbox mgt10 mgl10" style="width:40%;" id="5">
+					<span class="title">D</span>
+				</button>
+			</div>
+			<div class="row pdl10">
+				<p>Mobile Plan Information </p>
 
-		<div class="row pillbox mgt30 bgc-white" id="feature">
-				<div class="col-md-4 pd20">
-						<h3>JUMP!</h3>
-						<p class="text-muted">
-								Upgrade to the latest devices earlier and more often while also protecting your investment with Premium Handset Protection® and Lookout Mobile Security® Premium.
-						</p>
-						<p></p>
-				</div>
-				<div class="col-md-4 pd20">
-						<h3>Stateside International Services</h3>
-						<p class="text-muted">Keep in touch with family and friends abroad with T-Mobile's Stateside International Talk.</p>
-				</div>
-				<div class="col-md-4 pd20">
-						<h3>Rhapsody unRadio</h3>
-						<p class="text-muted">No ads. Unlimited skips. And millions of songs. Included with a Simple Choice plan with Unlimited 4G LTE. For all other T-Mobile customers, get a 20% discount. Compatible device required.</p>
-				</div>
+				<p>Mobile Plan Information </p>
+
+				<p>Mobile Plan Information </p>
+
+				<p>Mobile Plan Information </p>
+			</div>
 		</div>
+		<div class="col-md-4">
+			<div id="planaffix">
+				<h2>Select Plan</h2>
+
+				<p>$<span id="active_price">10</span> per month</p>
+
+				<p>
+				<ul>
+					<li>Cash in Card: 50RMB</li>
+					<li>Monthly fee: 38.8RMB</li>
+					<li>Domestic 4G data: 500MB</li>
+					<li>Free Call Minutes: 30 Mins</li>
+					<li>SMS package: 10</li>
+					<li>Domestic call: $0.03/Min</li>
+					<li>Domestic Data: $0.05/MB</li>
+					<li>Domestic Message: $0.02/Msg</li>
+				</ul>
+				</p>
+				<p>
+					<button class="btn btn-lg btn-green">Add to cart</button>
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="row pillbox mgt30 bgc-white" id="description">
+		<div class="col-md-5 col-md-offset-1 pd20">
+			<dl>
+				<dt>Mobile Plan</dt>
+				<dd>Mobile Plan Information</dd>
+			</dl>
+			<dl>
+				<dt>Mobile Plan</dt>
+				<dd>Mobile Plan Information</dd>
+			</dl>
+			<dl>
+				<dt>Mobile Plan</dt>
+				<dd>Mobile Plan Information</dd>
+			</dl>
+			<dl>
+				<dt>Mobile Plan</dt>
+				<dd>Mobile Plan Information</dd>
+			</dl>
+			<dl>
+				<dt>Mobile Plan</dt>
+				<dd>Mobile Plan Information</dd>
+			</dl>
+		</div>
+		<div class="col-md-5 col-md-offset-1 pd20">
+			<dl>
+				<dt>Mobile Plan</dt>
+				<dd>Mobile Plan Information</dd>
+			</dl>
+			<dl>
+				<dt>Mobile Plan</dt>
+				<dd>Mobile Plan Information</dd>
+			</dl>
+			<dl>
+				<dt>Mobile Plan</dt>
+				<dd>Mobile Plan Information</dd>
+			</dl>
+			<dl>
+				<dt>Mobile Plan</dt>
+				<dd>Mobile Plan Information</dd>
+			</dl>
+			<dl>
+				<dt>Mobile Plan</dt>
+				<dd>Mobile Plan Information</dd>
+			</dl>
+		</div>
+	</div>
+
+	<div class="row pillbox mgt30 bgc-white" id="feature">
+		<div class="col-md-4 pd20">
+			<h3>JUMP!</h3>
+
+			<p class="text-muted">
+				Upgrade to the latest devices earlier and more often while also protecting your investment with Premium Handset
+				Protection® and Lookout Mobile Security® Premium.
+			</p>
+
+			<p></p>
+		</div>
+		<div class="col-md-4 pd20">
+			<h3>Stateside International Services</h3>
+
+			<p class="text-muted">Keep in touch with family and friends abroad with T-Mobile's Stateside International
+				Talk.</p>
+		</div>
+		<div class="col-md-4 pd20">
+			<h3>Rhapsody unRadio</h3>
+
+			<p class="text-muted">No ads. Unlimited skips. And millions of songs. Included with a Simple Choice plan with
+				Unlimited 4G LTE. For all other T-Mobile customers, get a 20% discount. Compatible device required.</p>
+		</div>
+	</div>
 </div>
 <footer>
-		<div class="container">
-				<div class="row">
-						<div class="col-md-4">
-								<h3>Free Shipping</h3>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<h3>Free Shipping</h3>
 
-								<p>24-48 hours for major cities</p>
+				<p>24-48 hours for major cities</p>
 
-								<p>72 hours for most of the cities</p>
-						</div>
-						<div class="col-md-4">
-								<h3>No contracts</h3>
+				<p>72 hours for most of the cities</p>
+			</div>
+			<div class="col-md-4">
+				<h3>No contracts</h3>
 
-								<p>Local rate, pay as you go</p>
+				<p>Local rate, pay as you go</p>
 
-								<p>No international roaming charge</p>
+				<p>No international roaming charge</p>
 
-								<p>No domestic long distance charge</p>
-						</div>
-						<div class="col-md-4">
-								<h3>Robust Network</h3>
+				<p>No domestic long distance charge</p>
+			</div>
+			<div class="col-md-4">
+				<h3>Robust Network</h3>
 
-								<p>4G LTE in major cities, speed up to 150 Mbps</p>
+				<p>4G LTE in major cities, speed up to 150 Mbps</p>
 
-								<p>Over 120,000 ChinaNet Wi-Fi hotspots</p>
-						</div>
-				</div>
-				<div class="row line">
-						<div class="col-md-12 pdt10">
-								<ul>
-										<li><a href="#">About China Telecom</a></li>
-										<li><a href="#">Contact Us</a></li>
-										<li><a href="#">Privacy Policy</a></li>
-								</ul>
-						</div>
-						<!--<div class="col-md-6">-->
-						<!--<img class="img-responsive" src="images/friendlink.png">-->
-						<!--</div>-->
-						<div class="col-md-12 pdt10">
-								© 2014 China Telecom, Inc. All rights reserved [Telecommunications Business License: A2.B1.B2-20090001 ]
-								NO.ICP
-								: 0903192nes
-						</div>
-				</div>
+				<p>Over 120,000 ChinaNet Wi-Fi hotspots</p>
+			</div>
 		</div>
+		<div class="row line">
+			<div class="col-md-12 pdt10">
+				<ul>
+					<li><a href="#">About China Telecom</a></li>
+					<li><a href="#">Contact Us</a></li>
+					<li><a href="#">Privacy Policy</a></li>
+				</ul>
+			</div>
+			<!--<div class="col-md-6">-->
+			<!--<img class="img-responsive" src="images/friendlink.png">-->
+			<!--</div>-->
+			<div class="col-md-12 pdt10">
+				© 2014 China Telecom, Inc. All rights reserved [Telecommunications Business License: A2.B1.B2-20090001 ]
+				NO.ICP
+				: 0903192nes
+			</div>
+		</div>
+	</div>
 </footer>
 <script src="//uilibs.qiniudn.com/jquery/1.8.0/jquery.min.js"></script>
 <script src="//uilibs.qiniudn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 <script src="//uilibs.qiniudn.com/seajs/2.3.0/sea.js"></script>
 <script>
-		seajs.use('./js/util');
-		seajs.use('./js/plan');
-		seajs.use('./js/shopping', function (shopping) {
-				$('.btn-green').click(function () {
-						var id = $('#active_price').text();
-						shopping.moveBox($('#' + id));
-						$('#' + id).addClass('plan-active');
-				});
-		});
+	seajs.use('./js/util');
+	seajs.use('./js/plan');
+	seajs.use('./js/shopping', function (shopping) {
+//		$('.btn-green').click(function () {
+//			var id = $('#active_price').text();
+//			shopping.moveBox($('#' + id));
+//			$('#' + id).addClass('plan-active');
+//		});
+	});
 </script>
 </body>
 </html>
