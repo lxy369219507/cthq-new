@@ -1,158 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>China TeleCom</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>China TeleCom</title>
 
-	<link rel="stylesheet" href="//uilibs.qiniudn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
-	<link rel="stylesheet" href="css/font-awesome.min.css"/>
-	<link rel="stylesheet" href="css/reset.css"/>
-	<link rel="stylesheet" href="css/style.css"/>
-	<!--[if lt IE 9]>
-	<link rel="stylesheet" href="css/font-awesome-ie7.min.css"/>
-	<script src="//uilibs.qiniudn.com/html5/html5shiv.min.js"></script>
-	<script src="//uilibs.qiniudn.com/html5/respond.min.js"></script>
-	<![endif]-->
+		<link rel="stylesheet" href="//uilibs.qiniudn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="css/font-awesome.min.css"/>
+		<link rel="stylesheet" href="css/reset.css"/>
+		<link rel="stylesheet" href="css/style.css"/>
+		<!--[if lt IE 9]>
+		<link rel="stylesheet" href="css/font-awesome-ie7.min.css"/>
+		<script src="//uilibs.qiniudn.com/html5/html5shiv.min.js"></script>
+		<script src="//uilibs.qiniudn.com/html5/respond.min.js"></script>
+		<![endif]-->
 </head>
 <body>
 <header>
-	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-		<div class="container">
-			<!--固定结构，样式就是最小化时候的图标 这里的data-target指向的是collapse-->
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a href="#">
-					<img src="images/logo.png" height="41" width="122">
-				</a>
-			</div>
-			<!--上面的data-target指向的是下面的导航栏，默认在768像素一下的时候是横向显示，小于768时隐藏，只有点击上面的button才会展开 -->
-			<div class="collapse navbar-collapse" id="navbar">
-				<ul class="nav navbar-nav">
-					<li><a href="wifi.html">Wi-Fi</a></li>
-					<li><a href="refill.html">Refill</a></li>
-					<li><a href="Phone.html">CellPhone</a></li>
-					<li><a href="plan.html">Mobile Plan</a></li>
-					<li><a href="dataplan.html">Data Plan</a></li>
-					<li><a href="shoppingcart.html"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a>
-					</li>
-					<li><a href="login.html" class="login_a"><span class="glyphicon glyphicon-user"></span> Login</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</nav>
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+				<div class="container">
+						<!--固定结构，样式就是最小化时候的图标 这里的data-target指向的是collapse-->
+						<div class="navbar-header">
+								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+										<span class="sr-only">Toggle navigation</span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+								</button>
+								<a href="index.html">
+										<img src="images/logo.png" height="41" width="122">
+								</a>
+						</div>
+						<!--上面的data-target指向的是下面的导航栏，默认在768像素一下的时候是横向显示，小于768时隐藏，只有点击上面的button才会展开 -->
+						<div class="collapse navbar-collapse" id="navbar">
+								<ul class="nav navbar-nav">
+										<li><a href="wifi.html">Wi-Fi</a></li>
+										<li><a href="refill.html">Refill</a></li>
+										<li><a href="Phone.html">CellPhone</a></li>
+										<li><a href="plan.html">Mobile Plan</a></li>
+										<li><a href="dataplan.html">Data Plan</a></li>
+										<li><a href="shoppingcart.html" id="cart"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a>
+
+												<div class="cart" id="items">
+														<p>Wifi 200 X 1</p>
+
+														<p>Wifi 200 X 1</p>
+
+														<p>Wifi 200 X 1</p>
+
+														<p>Wifi 200 X 1</p>
+
+														<p><input type="button" class="btn btn-green" value="Shopping Cart"/></p>
+												</div>
+										</li>
+										<li><a href="login.html" class="login_a"><span class="glyphicon glyphicon-user"></span> Login</a></li>
+								</ul>
+						</div>
+				</div>
+		</nav>
 </header>
 <div class="container">
-	<div class="row pdt10">
-		<h4 class="text-center fc-green"><i class=" icon-signal icon-3x"> Keep Connected with China Net</i></h4>
-	</div>
-	<div class="row pdt10">
-		<div class="media">
-			<a class="pull-left pull-middle" href="#">
-				<img src="images/iphone.jpg" alt="...">
-			</a>
-			<div class="media-body">
-				<h4 class="media-heading">ChinaNet Wi-Fi Day Pass</h4>
-				<p><span class="col-md-6">3 Hours high-speed Wi-Fi</span><span class="col-md-6">Over 1 Million Hotspots</span></p>
-				<p><span class="col-md-6">In 250 Major Cities＆Airports</span><span class="col-md-6">Valid for 24 Hours</span></p>
-				<p>Connect/Disconnect Anytime</p>
-			</div>
+		<div class="row pdt10">
+				<h4 class="text-center fc-green"><i class=" icon-signal icon-3x"> Keep Connected with China Net</i></h4>
 		</div>
-		<div class="media">
-			<a class="pull-left" href="#">
-				<img src="images/iphone.jpg" alt="">
-			</a>
-			<div class="media-body">
-				<h4 class="media-heading">ChinaNet Wi-Fi Week Pass</h4>
-				<p><span class="col-md-6">3 Hours high-speed Wi-Fi</span><span class="col-md-6">Over 1 Million Hotspots</span></p>
-				<p><span class="col-md-6">In 250 Major Cities＆Airports</span><span class="col-md-6">Valid for 24 Hours</span></p>
-				<p>Connect/Disconnect Anytime</p>
-			</div>
+		<div class="row pdt10">
+				<div class="col-md-8">
+						<div class="row pillbox bgc-white mgt10 pd20">
+								<div class="col-md-3">
+										<img src="images/wifi.png" alt="">
+								</div>
+								<div class="col-md-9">
+										<h3 class="media-heading col-md-12">ChinaNet Wi-Fi Week Pass</h3>
+										<p><span class="col-md-6">3 Hours high-speed Wi-Fi</span><span class="col-md-6">Over 1 Million Hotspots</span>
+										</p>
+										<p><span class="col-md-6">In 250 Major Cities＆Airports</span><span class="col-md-6">Valid for 24 Hours</span>
+										</p>
+										<p class="col-md-6"><input type="button" class="btn btn-green" value="Add To Cart"/></p>
+								</div>
+						</div>
+						<div class="row pillbox bgc-white mgt10 pd20">
+								<div class="col-md-3">
+										<img src="images/wifi.png" alt="">
+								</div>
+								<div class="col-md-9">
+										<h3 class="media-heading col-md-12">ChinaNet Wi-Fi Week Pass</h3>
+										<p><span class="col-md-6">3 Hours high-speed Wi-Fi</span><span class="col-md-6">Over 1 Million Hotspots</span>
+										</p>
+										<p><span class="col-md-6">In 250 Major Cities＆Airports</span><span class="col-md-6">Valid for 24 Hours</span>
+										</p>
+										<p class="col-md-6"><input type="button" class="btn btn-green" value="Add To Cart"/></p>
+								</div>
+						</div>
+						<div class="row pillbox bgc-white mgt10 pd20">
+								<div class="col-md-3">
+										<img src="images/wifi.png" alt="">
+								</div>
+								<div class="col-md-9">
+										<h3 class="media-heading col-md-12">ChinaNet Wi-Fi Week Pass</h3>
+										<p><span class="col-md-6">3 Hours high-speed Wi-Fi</span><span class="col-md-6">Over 1 Million Hotspots</span>
+										</p>
+										<p><span class="col-md-6">In 250 Major Cities＆Airports</span><span class="col-md-6">Valid for 24 Hours</span>
+										</p>
+										<p class="col-md-6"><input type="button" class="btn btn-green" value="Add To Cart"/></p>
+								</div>
+						</div>
+						<div class="row pillbox bgc-white mgt10 pd20">
+								<div class="col-md-3">
+										<img src="images/wifi.png" alt="">
+								</div>
+								<div class="col-md-9">
+										<h3 class="media-heading col-md-12">ChinaNet Wi-Fi Week Pass</h3>
+										<p><span class="col-md-6">3 Hours high-speed Wi-Fi</span><span class="col-md-6">Over 1 Million Hotspots</span>
+										</p>
+										<p><span class="col-md-6">In 250 Major Cities＆Airports</span><span class="col-md-6">Valid for 24 Hours</span>
+										</p>
+										<p class="col-md-6"><input type="button" class="btn btn-green" value="Add To Cart"/></p>
+								</div>
+						</div>
+						<div class="row pillbox bgc-white mgt10 pd20">
+								<div class="col-md-3">
+										<img src="images/wifi.png" alt="">
+								</div>
+								<div class="col-md-9">
+										<h3 class="media-heading col-md-12">ChinaNet Wi-Fi Week Pass</h3>
+										<p><span class="col-md-6">3 Hours high-speed Wi-Fi</span><span class="col-md-6">Over 1 Million Hotspots</span>
+										</p>
+										<p><span class="col-md-6">In 250 Major Cities＆Airports</span><span class="col-md-6">Valid for 24 Hours</span>
+										</p>
+										<p class="col-md-6"><input type="button" class="btn btn-green" value="Add To Cart"/></p>
+								</div>
+						</div>
+						</div>
+				<div class="col-md-4">
+						<div class="panel panel-default mgt10">
+								<div class="panel-heading">
+										<h3 class="panel-title">How to use Wi-Fi Pass</h3>
+								</div>
+								<div class="panel-body">
+										<P>Unleash the Power of ChinaNet Wi-Fi in 250 major cities like Beijing, Shanghai, Guangzhou...Now you can
+												keep connected with a fast, reliable and secure connection while touring the city. There are not any
+												cellular international roaming charges when using ChinaNet Wi-Fi.</P>
+
+										<p>1. Find a ChinaNet hotspot</p>
+
+										<p>2. Connect your computer, tablet or smartphone to ChinaNet Wi-Fi.</p>
+
+										<p>3. Launch your Web browser. You will be automatically directed to the ChinaNet Wi-Fi portal home page.
+												Alternately, you can enter <a href="http://wlan.ct10000.com">http://wlan.ct10000.com</a></p>
+
+										<p>4. Under “Other Account Login” enter your Wi-Fi Pass ID and password (or PIN code). Click “Login” to
+												connect to the Internet.</p>
+								</div>
+						</div>
+						<div class="panel panel-default">
+								<div class="panel-heading">
+										<h3 class="panel-title">Addtional Features</h3>
+								</div>
+								<div class="panel-body">
+										<p>High speed Internet up to 54 Mbps download speed to talk, send, share in Over 1 Million Hotspots in more
+												than 250 major cities and all major airports</p>
+
+										<p>Unleash the full power of China Telecom ChinaNet Wi-Fi!</p>
+
+										<p>Our dedicated English-speaking support team is available by dialing 10000; press 2 for an English speaking
+												agent.</p>
+
+										<p>Wi-Fi Passes are non-refundable.</p>
+								</div>
+						</div>
+				</div>
 		</div>
-		<div class="media">
-			<a class="pull-left" href="#">
-				<img src="images/iphone.jpg" alt="">
-			</a>
-			<div class="media-body">
-				<h4 class="media-heading">ChinaNet Wi-Fi Month Pass</h4>
-				<p><span class="col-md-6">3 Hours high-speed Wi-Fi</span><span class="col-md-6">Over 1 Million Hotspots</span></p>
-				<p><span class="col-md-6">In 250 Major Cities＆Airports</span><span class="col-md-6">Valid for 24 Hours</span></p>
-				<p>Connect/Disconnect Anytime</p>
-			</div>
-		</div>
-		<div class="media">
-			<a class="pull-left" href="#">
-				<img src="images/iphone.jpg" alt="">
-			</a>
-			<div class="media-body">
-				<h4 class="media-heading">ChinaNet Wi-Fi 3 Months Pass</h4>
-				<p><span class="col-md-6">3 Hours high-speed Wi-Fi</span><span class="col-md-6">Over 1 Million Hotspots</span></p>
-				<p><span class="col-md-6">In 250 Major Cities＆Airports</span><span class="col-md-6">Valid for 24 Hours</span></p>
-				<p>Connect/Disconnect Anytime</p>
-			</div>
-		</div>
-	</div>
 </div>
 </div>
 <footer>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-4">
-				<h3>Free Shipping</h3>
+		<div class="container">
+				<div class="row">
+						<div class="col-md-4">
+								<h3>Free Shipping</h3>
 
-				<p>24-48 hours for major cities</p>
+								<p>24-48 hours for major cities</p>
 
-				<p>72 hours for most of the cities</p>
-			</div>
-			<div class="col-md-4">
-				<h3>No contracts</h3>
+								<p>72 hours for most of the cities</p>
+						</div>
+						<div class="col-md-4">
+								<h3>No contracts</h3>
 
-				<p>Local rate, pay as you go</p>
+								<p>Local rate, pay as you go</p>
 
-				<p>No international roaming charge</p>
+								<p>No international roaming charge</p>
 
-				<p>No domestic long distance charge</p>
-			</div>
-			<div class="col-md-4">
-				<h3>Robust Network</h3>
+								<p>No domestic long distance charge</p>
+						</div>
+						<div class="col-md-4">
+								<h3>Robust Network</h3>
 
-				<p>4G LTE in major cities, speed up to 150 Mbps</p>
+								<p>4G LTE in major cities, speed up to 150 Mbps</p>
 
-				<p>Over 120,000 ChinaNet Wi-Fi hotspots</p>
-			</div>
+								<p>Over 120,000 ChinaNet Wi-Fi hotspots</p>
+						</div>
+				</div>
+				<div class="row line">
+						<div class="col-md-12 pdt10">
+								<ul>
+										<li><a href="#">About China Telecom</a></li>
+										<li><a href="#">Contact Us</a></li>
+										<li><a href="#">Privacy Policy</a></li>
+								</ul>
+						</div>
+						<!--<div class="col-md-6">-->
+						<!--<img class="img-responsive" src="images/friendlink.png">-->
+						<!--</div>-->
+						<div class="col-md-12 pdt10">
+								© 2014 China Telecom, Inc. All rights reserved [Telecommunications Business License: A2.B1.B2-20090001 ]
+								NO.ICP
+								: 0903192nes
+						</div>
+				</div>
 		</div>
-		<div class="row line">
-			<div class="col-md-12 pdt10">
-				<ul>
-					<li><a href="#">About China Telecom</a></li>
-					<li><a href="#">Contact Us</a></li>
-					<li><a href="#">Privacy Policy</a></li>
-				</ul>
-			</div>
-			<!--<div class="col-md-6">-->
-			<!--<img class="img-responsive" src="images/friendlink.png">-->
-			<!--</div>-->
-			<div class="col-md-12 pdt10">
-				© 2014 China Telecom, Inc. All rights reserved [Telecommunications Business License: A2.B1.B2-20090001 ]
-				NO.ICP
-				: 0903192nes
-			</div>
-		</div>
-	</div>
 </footer>
 <script src="//uilibs.qiniudn.com/jquery/1.8.0/jquery.min.js"></script>
 <script src="//uilibs.qiniudn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 <script src="//uilibs.qiniudn.com/seajs/2.3.0/sea.js"></script>
 <script>
-	seajs.use('./js/util');
-	seajs.use('./js/home');
+		seajs.use('./js/util');
+		seajs.use('./js/home');
 </script>
 </body>
 </html>

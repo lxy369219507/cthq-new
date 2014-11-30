@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Demo</title>
+	<title>Recharge</title>
 
 	<link rel="stylesheet" href="//uilibs.qiniudn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
 	<link rel="stylesheet" href="css/font-awesome.min.css"/>
@@ -36,22 +36,20 @@
 			<div class="collapse navbar-collapse" id="navbar">
 				<ul class="nav navbar-nav">
 					<li><a href="wifi.html">Wi-Fi</a></li>
-					<li><a href="refill.html">Refill</a></li>
+					<li><a href="Recharge.html">Recharge</a></li>
 					<li><a href="Phone.html">CellPhone</a></li>
 					<li><a href="plan.html">Mobile Plan</a></li>
 					<li><a href="dataplan.html">Data Plan</a></li>
-					<li><a href="#Cart" id="cart"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a>
-
-						<div class="cart" id="items">
-							<ul>
-								<li>fdsfsdf</li>
-								<li>sdfsdf</li>
-								<li>sdfsdf</li>
-								<li>fdsfdsf</li>
-							</ul>
-						</div>
-					</li>
-					<li><a href="#Login" class="login_a"><span class="glyphicon glyphicon-user"></span> Login</a></li>
+						<li><a href="shoppingcart.html" id="cart"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a>
+								<div class="cart" id="items">
+										<p>Wifi 200 X 1</p>
+										<p>Wifi 200 X 1</p>
+										<p>Wifi 200 X 1</p>
+										<p>Wifi 200 X 1</p>
+										<p><input type="button" class="btn btn-green" value="Shopping Cart"/></p>
+								</div>
+						</li>
+						<li><a href="login.html" class="login_a"><span class="glyphicon glyphicon-user"></span> Login</a></li>
 				</ul>
 			</div>
 		</div>
@@ -59,41 +57,61 @@
 </header>
 <div class="container">
 	<div class="row mgt10">
-		<h3>
-			<i class="icon-mobile-phone icon-2x"> Refill your phone number</i>
+		<h3 class="fc-green">
+			<i class="icon-mobile-phone icon-2x"> Recharge your phone number</i>
 		</h3>
 	</div>
 	<div class="row">
-		<div class="col-md-6">
-			<form class="col-md-6" role="form">
+		<div class="col-md-10">
+			<form class="col-md-5" role="form" id="RechargeForm">
 				<div class="form-group">
 					<label for="PhoneNumber">Enter your mobile number</label>
-					<input type="text" class="form-control" id="PhoneNumber" placeholder="Phone Number">
+					<input type="text" class="form-control required" id="PhoneNumber" placeholder="Phone Number">
 				</div>
 				<div class="form-group">
 					<label for="RePhoneNumber">Confirm your mobile number</label>
-					<input type="text" class="form-control" id="RePhoneNumber" placeholder="Re Phone Number">
+					<input type="text" class="form-control required" id="RePhoneNumber" placeholder="Re Phone Number">
 				</div>
 				<h3>Top up Amount</h3>
 				<div class="radio">
 					<label>
-						<input type="radio" name="Refill" id="Refill1" value="1" checked>
+						<input type="radio" name="Recharge" id="Recharge1" value="1" checked>
 						Top up $9.18( Top up 50 yuan )
 					</label>
 				</div>
 				<div class="radio">
 					<label>
-						<input type="radio" name="Refill" id="Refil2" value="2">
+						<input type="radio" name="Recharge" id="Refil2" value="2">
 						Top up $18.36( Top up 100 yuan )
 					</label>
 				</div>
 				<button type="submit" class="btn btn-green"><i class="icon-shopping-cart"> Add To Cart </i></button>
 			</form>
-		</div>
-		<div class="col-md-6">
-		<p>
-
-		</p>
+				<div class="col-md-5 col-md-offset-1">
+						<p>Reference pricing information for domestic voice minute and data, free incoming calls:</p>
+						<table class="table table-bordered">
+								<thead>
+								<tr>
+										<th>Recharge Amount</th>
+										<th>Voice(Minutes)</th>
+										<th>4G Data</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+										<td>Top-up 50 Yuan</td>
+										<td>300</td>
+										<td>560MB</td>
+								</tr>
+								<tr>
+										<td>Top-up 100 Yuan</td>
+										<td>600</td>
+										<td>1.5GB</td>
+								</tr>
+								</tbody>
+						</table>
+						<p><span class="fc-green">*Note</span>: Pricing information is for reference only, subject to change without notice</p>
+				</div>
 		</div>
 	</div>
 </div>
@@ -144,6 +162,7 @@
 	</div>
 </footer>
 <script src="//uilibs.qiniudn.com/jquery/1.8.0/jquery.min.js"></script>
+<script src="js/jquery.validate.js"></script>
 <script src="//uilibs.qiniudn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 <script src="//uilibs.qiniudn.com/seajs/2.3.0/sea.js"></script>
 <script>
@@ -156,6 +175,10 @@
 			$('#' + id).addClass('plan-active');
 		});
 	});
+
+		$('.btn').click(function(){
+				$('#RechargeForm').valid();
+		});
 </script>
 </body>
 </html>

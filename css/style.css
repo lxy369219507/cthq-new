@@ -2,14 +2,16 @@ body {
 		background-color: #F6F5F5;
 }
 
-.pd20{
-		padding:20px;
+.pd20 {
+		padding: 20px;
 }
-.pd40{
-		padding:20px;
+
+.pd40 {
+		padding: 20px;
 }
-.pd50{
-		padding:20px;
+
+.pd50 {
+		padding: 20px;
 }
 
 .pdt5 {
@@ -93,7 +95,7 @@ body {
 		box-shadow: 2px 1px 3px #EEE;
 }
 
-.bdt{
+.bdt {
 		border-bottom: 1px dashed #dcdcdc;
 }
 
@@ -114,7 +116,6 @@ body {
 		border: 1px solid #DCDCDC;
 }
 
-
 /*
 header
 */
@@ -126,8 +127,19 @@ header .cart {
 		position: absolute;
 		top: 60px;
 		left: 20px;
+		width: 200px;
 		display: none;
-		background-color: red;
+		padding: 10px;
+		border-radius: 10px;
+		background-color: #ffffff;
+}
+
+header .cart-number {
+		width: 18px;
+		height: 18px;
+		display: inline-block;
+		border-radius: 3px;
+		text-align: center;
 }
 
 @media (max-width: 768px) {
@@ -178,9 +190,10 @@ index
 		cursor: pointer;
 }
 
-.pointer{
+.pointer {
 		cursor: pointer;
 }
+
 .row > .col-md-3 > .thumbnail.active {
 		-moz-border-radius: 11px;
 		-webkit-border-radius: 11px;
@@ -231,27 +244,31 @@ div.col-md-8 .plan-active {
 		background-color: #9fd10e;
 }
 
-.payment-month{
-		width:30%;
-}
-.payment-year{
-		width:70%;
-}
-@media (max-width: 768px){
-		.payment-month{
-				width:100%;
-		}
-
-		.payment-year{
-				width:100%;
-		}
+.payment-month {
+		width: 30%;
 }
 
-.login-code{
+.payment-year {
+		width: 70%;
+}
+
+@media (max-width: 768px) {
+		.payment-month {
+				width: 100%;
+		}
+
+		.payment-year {
+				width: 100%;
+		}
+}
+
+.login-code {
 		width: 40%;
-		padding-left:5px;
+		padding-left: 5px;
 }
-.login-code-input{
+
+.login-code-input {
 		width: 60%;
 		float: left;
 }
+
