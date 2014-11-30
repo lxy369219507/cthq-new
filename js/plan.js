@@ -34,4 +34,13 @@ define(function (require, exports) {
 						$('#active_price').html($(this).attr('id'));
 				}
 		});
+
+	  //$('div.pointer').each(function(){
+     //   $(this).click(function(){
+	  //      $('div.pointer').each(function(){
+		 //       $(this).removeClass('broadband-shadow');
+	  //      });
+		 //       $(this).addClass('broadband-shadow');
+     //   })
+	  //});
 });

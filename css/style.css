@@ -2,6 +2,8 @@ body {
 		background-color: #F6F5F5;
 }
 
+
+
 .pd20 {
 		padding: 20px;
 }
@@ -270,5 +272,11 @@ div.col-md-8 .plan-active {
 .login-code-input {
 		width: 60%;
 		float: left;
+}
+
+.broadband-shadow {
+	-moz-box-shadow:2px 2px 5px #969696;/*firefox*/
+	-webkit-box-shadow:2px 2px 5px #969696;/*webkit*/
+	box-shadow:2px 2px 5px #969696;/*opera或ie9*/
 }
 
