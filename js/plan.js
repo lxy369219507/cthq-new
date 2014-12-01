@@ -43,4 +43,13 @@ define(function (require, exports) {
 		 //       $(this).addClass('broadband-shadow');
      //   })
 	  //});
+
+		$('div.cardtype').each(function(){
+    $(this).click(function(){
+						$('div.cardtype').each(function(){
+								$(this).removeClass('bgc-green');
+						});
+						$(this).addClass('bgc-green');
+				});
+		});
 });

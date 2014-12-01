@@ -109,6 +109,10 @@ body {
 		background-color: #9fd10e;
 }
 
+.bgc-gray {
+		background-color: #F6F5F5;
+}
+
 .bgc-white {
 		background-color: #fff;
 }
@@ -273,10 +277,3 @@ div.col-md-8 .plan-active {
 		width: 60%;
 		float: left;
 }
-
-.broadband-shadow {
-	-moz-box-shadow:2px 2px 5px #969696;/*firefox*/
-	-webkit-box-shadow:2px 2px 5px #969696;/*webkit*/
-	box-shadow:2px 2px 5px #969696;/*opera或ie9*/
-}
-
