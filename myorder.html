@@ -134,7 +134,43 @@
 								<th>Amount</th>
 							</tr>
 							</thead>
+							<tbody>
+
+							<tr>
+								<td><a href="toOrderDetail.dhtml?orderId=150">150</a>
+								</td>
+								<td>2014-12-01 16:23:05</td>
+								<td class="orderdetailfont1">xiaoyang li</td>
+								<td>221.94</td>
+							</tr>
+
+							<tr>
+								<td><a href="toOrderDetail.dhtml?orderId=148">148</a>
+								</td>
+								<td>2014-11-30 21:16:14</td>
+								<td class="orderdetailfont1">xiaoyang li</td>
+								<td>389.99</td>
+							</tr>
+
+							<tr>
+								<td><a href="toOrderDetail.dhtml?orderId=5">5</a>
+								</td>
+								<td>2014-09-22 15:06:21</td>
+								<td class="orderdetailfont1">xiaoyang li</td>
+								<td>5.99</td>
+							</tr>
+
+							<tr>
+								<td><a href="toOrderDetail.dhtml?orderId=4">4</a>
+								</td>
+								<td>2014-09-18 16:01:38</td>
+								<td class="orderdetailfont1">xiaoyang li</td>
+								<td>9.18</td>
+							</tr>
+
+							</tbody>
 						</table>
+						<ul id="example"></ul>
 					</div>
 				</div>
 			</div>
@@ -193,13 +229,23 @@
 <script>
 	seajs.use('./js/util');
 	seajs.use('./js/plan');
-	seajs.use('./js/shopping', function (shopping) {
-		$('.btn-green').click(function () {
-			var id = $('#active_price').text();
-			shopping.moveBox($('#' + id));
-			$('#' + id).addClass('plan-active');
-		});
+	seajs.use('./js/bootstrap-paginator.min', function(){
+		var options = {
+			bootstrapMajorVersion:3,
+			size:'large',// normal/ small
+			alignment:'center',
+			useBootstrapTooltip:true,
+			numberOfPages:3,
+			currentPage: 1,
+			totalPages: 10,
+			onPageClicked: function(e,originalEvent,type,page){
+				alert("Page item clicked, type: "+type+" page: "+page);
+			}
+		}
+		$('#example').bootstrapPaginator(options);
 	});
+
+
 </script>
 </body>
 </html>

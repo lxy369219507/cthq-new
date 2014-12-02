@@ -40,6 +40,9 @@ body {
 		padding-left: 15px;
 }
 
+.pdr30{
+		padding-right: 30px;
+}
 .mgt10 {
 		margin-top: 10px;
 }
@@ -103,6 +106,7 @@ body {
 
 .fc-green {
 		color: #9fd10e;
+		font-weight: 800;
 }
 
 .bgc-green {

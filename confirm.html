@@ -1,182 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Confirmation</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Confirmation</title>
 
-		<link rel="stylesheet" href="//uilibs.qiniudn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
-		<link rel="stylesheet" href="css/font-awesome.min.css"/>
-		<link rel="stylesheet" href="css/reset.css"/>
-		<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="//uilibs.qiniudn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="css/reset.css"/>
+	<link rel="stylesheet" href="css/style.css"/>
 
-		<!--[if lt IE 9]>
-		<link rel="stylesheet" href="css/font-awesome-ie7.min.css"/>
-		<script src="//uilibs.qiniudn.com/html5/html5shiv.min.js"></script>
-		<script src="//uilibs.qiniudn.com/html5/respond.min.js"></script>
-		<![endif]-->
+	<!--[if lt IE 9]>
+	<link rel="stylesheet" href="css/font-awesome-ie7.min.css"/>
+	<script src="//uilibs.qiniudn.com/html5/html5shiv.min.js"></script>
+	<script src="//uilibs.qiniudn.com/html5/respond.min.js"></script>
+	<![endif]-->
 </head>
 <body>
 <header>
-		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-				<div class="container">
-						<!--固定结构，样式就是最小化时候的图标 这里的data-target指向的是collapse-->
-						<div class="navbar-header">
-								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
-										<span class="sr-only">Toggle navigation</span>
-										<span class="icon-bar"></span>
-										<span class="icon-bar"></span>
-										<span class="icon-bar"></span>
-								</button>
-								<a href="index_back.html">
-										<img src="images/logo.png" height="41" width="122">
-								</a>
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class="container">
+			<!--固定结构，样式就是最小化时候的图标 这里的data-target指向的是collapse-->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="index_back.html">
+					<img src="images/logo.png" height="41" width="122">
+				</a>
+			</div>
+			<!--上面的data-target指向的是下面的导航栏，默认在768像素一下的时候是横向显示，小于768时隐藏，只有点击上面的button才会展开 -->
+			<div class="collapse navbar-collapse" id="navbar">
+				<ul class="nav navbar-nav">
+					<li><a href="wifi.html">Wi-Fi</a></li>
+					<li><a href="refill.html">Refill</a></li>
+					<li><a href="Phone.html">CellPhone</a></li>
+					<li><a href="plan.html">Mobile Plan</a></li>
+					<li><a href="dataplan.html">Data Plan</a></li>
+					<li><a href="shoppingcart.html" id="cart"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a>
+
+						<div class="cart" id="items">
+							<p>Wifi 200 X 1</p>
+
+							<p>Wifi 200 X 1</p>
+
+							<p>Wifi 200 X 1</p>
+
+							<p>Wifi 200 X 1</p>
+
+							<p><input type="button" class="btn btn-green" value="Shopping Cart"/></p>
 						</div>
-						<!--上面的data-target指向的是下面的导航栏，默认在768像素一下的时候是横向显示，小于768时隐藏，只有点击上面的button才会展开 -->
-						<div class="collapse navbar-collapse" id="navbar">
-								<ul class="nav navbar-nav">
-										<li><a href="wifi.html">Wi-Fi</a></li>
-										<li><a href="refill.html">Refill</a></li>
-										<li><a href="Phone.html">CellPhone</a></li>
-										<li><a href="plan.html">Mobile Plan</a></li>
-										<li><a href="dataplan.html">Data Plan</a></li>
-										<li><a href="shoppingcart.html" id="cart"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a>
-												<div class="cart" id="items">
-														<p>Wifi 200 X 1</p>
-														<p>Wifi 200 X 1</p>
-														<p>Wifi 200 X 1</p>
-														<p>Wifi 200 X 1</p>
-														<p><input type="button" class="btn btn-green" value="Shopping Cart"/></p>
-												</div>
-										</li>
-										<li><a href="login.html" class="login_a"><span class="glyphicon glyphicon-user"></span> Login</a></li>
-								</ul>
-						</div>
-				</div>
-		</nav>
+					</li>
+					<li><a href="login.html" class="login_a"><span class="glyphicon glyphicon-user"></span> Login</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
 </header>
 <div class="container">
-		<div class="panel panel-default">
-				<div class="panel-heading">
-						<h3 class="panel-title"><i class="icon-ok icon-2x fc-green"> CONFIRMATION</i></h3>
-				</div>
-				<div class="panel-body">
-						<div class="col-md-11 col-md-offset-1 bdt">
-								<p class="lead">Dear, liyang</p>
-
-								<p class="mgb20">You have purchased the following products, a confirmation email is sent to your email <strong>369219507@qq.com</strong>,
-										please check your email from OnlineStore @189.cn, it may be in your spam folder due to your company email
-										filter setting.</p>
-
-								<p class="bdt"></p>
-
-								<p>
-										Mobile Plan B x 1 (Standard)
-								</p>
-
-								<p>
-										Mobile Plan B x 1 (Standard)
-								</p>
-
-								<p>
-										Mobile Plan B x 1 (Standard)
-								</p>
-						</div>
-						<hr>
-						<p class="col-md-11 col-md-offset-1 mgt20">If you want to check out your order history and order detail, you could enter your password,
-								using your email as the account login name:</p>
-
-						<form class="form-horizontal col-md-6 col-md-offset-1" role="form">
-								<div class="form-group">
-										<label for="Password" class="col-sm-2 control-label">Password:</label>
-										<div class="col-sm-10">
-												<input class="form-control" type="password" id="Password" name="Password"
-																			placeholder="Password"/>
-										</div>
-								</div>
-								<div class="form-group">
-										<label for="RePassword" class="col-sm-2 control-label">Confirm Password:</label>
-										<div class="col-sm-10">
-												<input class="form-control" type="password" id="RePassword" name="RePassword"
-																			placeholder="Confirm Password"/>
-										</div>
-								</div>
-								<div class="form-group">
-										<div class="col-sm-offset-2 col-sm-10">
-												<button type="submit" class="btn btn-green">Regist</button>
-										</div>
-								</div>
-						</form>
-
-						<p class="col-md-11 col-md-offset-1 mgt20">
-								<span class="fc-green">$ 19.99 </span> was charged to Visa Card **************1111 held by Li Xiaoyang on 2014-11-20 14:00:54
-						</p>
-						<p class="col-md-11 col-md-offset-1">
-								Confirmation is send to: 369219507@qq.com
-						</p>
-				</div>
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h3 class="panel-title"><i class="icon-ok icon-2x fc-green"> CONFIRMATION</i></h3>
 		</div>
+		<div class="panel-body">
+			<div class="col-md-11 col-md-offset-1 bdt">
+				<p class="lead">Dear, liyang</p>
+
+				<p class="mgb20 bdt">You have purchased the following products, a confirmation email is sent to your email
+					<strong>369219507@qq.com</strong>,
+					please check your email from OnlineStore @189.cn, it may be in your spam folder due to your company email
+					filter setting.</p>
+
+				<p>
+					Mobile Plan B x 1 (Standard)
+				</p>
+
+				<p>
+					Mobile Plan B x 1 (Standard)
+				</p>
+
+				<p>
+					Mobile Plan B x 1 (Standard)
+				</p>
+			</div>
+			<div class="col-md-11 col-md-offset-1 mgt10 bdt">
+				<p class="lead">Coupon card for you to save money:</p>
+				<ul class="list-inline">
+					<li><i class="icon-gift fc-green"></i></li>
+					<li>ABCDEFG</li>
+					<li>$5</li>
+					<li>2016-12-31</li>
+				</ul>
+			</div>
+			<p class="col-md-11 col-md-offset-1 mgt20">If you want to check out your order history and order detail, you could
+				enter your password,
+				using your email as the account login name:</p>
+
+			<form class="form-horizontal col-md-6 col-md-offset-1" role="form">
+				<div class="form-group">
+					<label for="Password" class="col-sm-2 control-label">Password:</label>
+
+					<div class="col-sm-10">
+						<input class="form-control" type="password" id="Password" name="Password"
+									 placeholder="Password"/>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="RePassword" class="col-sm-2 control-label">Confirm Password:</label>
+
+					<div class="col-sm-10">
+						<input class="form-control" type="password" id="RePassword" name="RePassword"
+									 placeholder="Confirm Password"/>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-sm-offset-2 col-sm-10">
+						<button type="submit" class="btn btn-green">Regist</button>
+					</div>
+				</div>
+			</form>
+
+			<p class="col-md-11 col-md-offset-1 mgt20">
+				<span class="fc-green">$ 19.99 </span> was charged to Visa Card **************1111 held by Li Xiaoyang on
+				2014-11-20 14:00:54
+			</p>
+
+			<p class="col-md-11 col-md-offset-1">
+				Confirmation is send to: 369219507@qq.com
+			</p>
+		</div>
+	</div>
 </div>
 <footer>
-		<div class="container">
-				<div class="row">
-						<div class="col-md-4">
-								<h3>Free Shipping</h3>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<h3>Free Shipping</h3>
 
-								<p>24-48 hours for major cities</p>
+				<p>24-48 hours for major cities</p>
 
-								<p>72 hours for most of the cities</p>
-						</div>
-						<div class="col-md-4">
-								<h3>No contracts</h3>
+				<p>72 hours for most of the cities</p>
+			</div>
+			<div class="col-md-4">
+				<h3>No contracts</h3>
 
-								<p>Local rate, pay as you go</p>
+				<p>Local rate, pay as you go</p>
 
-								<p>No international roaming charge</p>
+				<p>No international roaming charge</p>
 
-								<p>No domestic long distance charge</p>
-						</div>
-						<div class="col-md-4">
-								<h3>Robust Network</h3>
+				<p>No domestic long distance charge</p>
+			</div>
+			<div class="col-md-4">
+				<h3>Robust Network</h3>
 
-								<p>4G LTE in major cities, speed up to 150 Mbps</p>
+				<p>4G LTE in major cities, speed up to 150 Mbps</p>
 
-								<p>Over 120,000 ChinaNet Wi-Fi hotspots</p>
-						</div>
-				</div>
-				<div class="row line">
-						<div class="col-md-12 pdt10">
-								<ul>
-										<li><a href="#">About China Telecom</a></li>
-										<li><a href="#">Contact Us</a></li>
-										<li><a href="#">Privacy Policy</a></li>
-								</ul>
-						</div>
-						<!--<div class="col-md-6">-->
-						<!--<img class="img-responsive" src="images/friendlink.png">-->
-						<!--</div>-->
-						<div class="col-md-12 pdt10">
-								© 2014 China Telecom, Inc. All rights reserved [Telecommunications Business License: A2.B1.B2-20090001 ]
-								NO.ICP
-								: 0903192nes
-						</div>
-				</div>
+				<p>Over 120,000 ChinaNet Wi-Fi hotspots</p>
+			</div>
 		</div>
+		<div class="row line">
+			<div class="col-md-12 pdt10">
+				<ul>
+					<li><a href="#">About China Telecom</a></li>
+					<li><a href="#">Contact Us</a></li>
+					<li><a href="#">Privacy Policy</a></li>
+				</ul>
+			</div>
+			<!--<div class="col-md-6">-->
+			<!--<img class="img-responsive" src="images/friendlink.png">-->
+			<!--</div>-->
+			<div class="col-md-12 pdt10">
+				© 2014 China Telecom, Inc. All rights reserved [Telecommunications Business License: A2.B1.B2-20090001 ]
+				NO.ICP
+				: 0903192nes
+			</div>
+		</div>
+	</div>
 </footer>
 <script src="//uilibs.qiniudn.com/jquery/1.8.0/jquery.min.js"></script>
 <script src="//uilibs.qiniudn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 <script src="//uilibs.qiniudn.com/seajs/2.3.0/sea.js"></script>
 <script>
-		seajs.use('./js/util');
-		seajs.use('./js/plan');
-		seajs.use('./js/shopping', function (shopping) {
-				$('.btn-green').click(function () {
-						var id = $('#active_price').text();
-						shopping.moveBox($('#' + id));
-						$('#' + id).addClass('plan-active');
-				});
+	seajs.use('./js/util');
+	seajs.use('./js/plan');
+	seajs.use('./js/shopping', function (shopping) {
+		$('.btn-green').click(function () {
+			var id = $('#active_price').text();
+			shopping.moveBox($('#' + id));
+			$('#' + id).addClass('plan-active');
 		});
+	});
 </script>
 </body>
 </html>
