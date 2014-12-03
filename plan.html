@@ -7,9 +7,12 @@
 	<title>Demo</title>
 
 	<link rel="stylesheet" href="//uilibs.qiniudn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/font-awesome.min.css"/>
 	<link rel="stylesheet" href="css/reset.css"/>
 	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/table.css"/>
 	<!--[if lt IE 9]>
+	<link rel="stylesheet" href="css/font-awesome-ie7.min.css"/>
 	<script src="//uilibs.qiniudn.com/html5/html5shiv.min.js"></script>
 	<script src="//uilibs.qiniudn.com/html5/respond.min.js"></script>
 	<![endif]-->
@@ -65,53 +68,57 @@
 		</h1>
 		<h5>Stay connected on our super-fast nationwide network.</h5>
 	</div>
-	<div class="row pillbox bgc-white" id="plans">
-		<div class="col-md-8 pd20">
+	<div class="row pillbox bgc-gray" id="plans">
+		<div class="col-md-8 pd20 bgc-white">
 			<div class="row mgt20">
-				<button class="pillbox mgt10 mgl10 plan-active" style="width:10%;" id="2">
+				<button class="pillbox mgt10 mgl10 plan-active wper10" id="2">
 					<span class="title active">A</span>
 				</button>
 			</div>
 			<div class="row">
-				<button class="pillbox mgt10 mgl10" style="width:20%;" id="3">
+				<button class="pillbox mgt10 mgl10 wper20" id="3">
 					<span class="title">B</span>
 				</button>
 			</div>
 			<div class="row">
-				<button class="pillbox mgt10 mgl10" style="width:30%;" id="4">
+				<button class="pillbox mgt10 mgl10  wper30" id="4">
 					<span class="title">C</span>
 				</button>
 			</div>
 			<div class="row">
-				<button class="pillbox mgt10 mgl10" style="width:40%;" id="5">
+				<button class="pillbox mgt10 mgl10 wper40"id="5">
 					<span class="title">D</span>
 				</button>
 			</div>
+			<p class="mgt10">First month, pay (monthly fee/30) every day.</p>
+
+			<p>Next month, pay monthly fee in the first four days.</p>
+
+			<p> If you do not use your card or arrear for <b>90 days</b>, your number will be block up and can not use again.
+			</p>
 		</div>
-		<div class="col-md-4 bgc-gray">
+		<div class="col-md-4">
 			<div id="planaffix">
 				<h2>Select Plan</h2>
 
-				<p>$<span id="active_price">10</span> per month</p>
+				<p>$ <span id="active_price" class="fc-green icon-2x">10</span> per month</p>
 
 				<p>
-				<ul>
+				<ul class="list-unstyled">
 					<li>Cash in Card: 50RMB</li>
 					<li>Monthly fee: 38.8RMB</li>
 					<li>Domestic 4G data: 500MB</li>
 					<li>Free Call Minutes: 30 Mins</li>
 					<li>SMS package: 10</li>
-					<li>Domestic call: $0.03/Min</li>
-					<li>Domestic Data: $0.05/MB</li>
-					<li>Domestic Message: $0.02/Msg</li>
 				</ul>
 				</p>
 				<p>
+
 				<div class="row pdl10">
 					<div class="pillbox mgt10 mgl10 pointer text-center col-md-3 cardtype bgc-green" id="1">
 						<span class="title">Standard</span>
 					</div>
-					<div class="pillbox mgt10 mgl10 pointer text-center col-md-3 cardtype"id="3">
+					<div class="pillbox mgt10 mgl10 pointer text-center col-md-3 cardtype" id="3">
 						<span class="title">Micro</span>
 					</div>
 					<div class="pillbox mgt10 mgl10 pointer text-center col-md-3 cardtype" id="5">
@@ -125,75 +132,71 @@
 			</div>
 		</div>
 	</div>
-	<div class="row pillbox mgt30 bgc-white" id="description">
-		<div class="col-md-5 col-md-offset-1 pd20">
+
+	<div class="row pillbox mgt30 bgc-white  pd20">
+		<p class="lead col-md-12">China Telecom UIM Card Type Description</p>
+		<div class="col-md-6">
 			<dl>
-				<dt>Mobile Plan</dt>
-				<dd>Mobile Plan Information</dd>
+				<dt>3G Standard Card:</dt>
+				<dd>HUAWEI C8816, Coolpad 5951, Xiaomi 3, Hongmi 1S, Hisense E968</dd>
 			</dl>
 			<dl>
-				<dt>Mobile Plan</dt>
-				<dd>Mobile Plan Information</dd>
+				<dt>3G Micro Card:</dt>
+				<dd>SAMSUNG Note3, iPhone 4S, HUAWEI P6, SAMSUNG S5, ZTE Hongniu V5</dd>
 			</dl>
 			<dl>
-				<dt>Mobile Plan</dt>
-				<dd>Mobile Plan Information</dd>
-			</dl>
-			<dl>
-				<dt>Mobile Plan</dt>
-				<dd>Mobile Plan Information</dd>
-			</dl>
-			<dl>
-				<dt>Mobile Plan</dt>
-				<dd>Mobile Plan Information</dd>
+				<dt>3G Nano Card:</dt>
+				<dd>iPhone 5, iPhone 5c, iPhone 5s</dd>
 			</dl>
 		</div>
-		<div class="col-md-5 col-md-offset-1 pd20">
+		<div class="col-md-6">
 			<dl>
-				<dt>Mobile Plan</dt>
-				<dd>Mobile Plan Information</dd>
+				<dt>4G Micro Card:</dt>
+				<dd>SAMSUNG Note3 4G, SAMSUNG S5 4G, ZTE G718C, HUAWEI C8817L, HUAWEI P7-L09 4G</dd>
 			</dl>
 			<dl>
-				<dt>Mobile Plan</dt>
-				<dd>Mobile Plan Information</dd>
-			</dl>
-			<dl>
-				<dt>Mobile Plan</dt>
-				<dd>Mobile Plan Information</dd>
-			</dl>
-			<dl>
-				<dt>Mobile Plan</dt>
-				<dd>Mobile Plan Information</dd>
-			</dl>
-			<dl>
-				<dt>Mobile Plan</dt>
-				<dd>Mobile Plan Information</dd>
+				<dt>4G Nano Card:</dt>
+				<dd>HTC-M8, iPhone6/6plus</dd>
 			</dl>
 		</div>
+		<p class="col-md-12"><strong class="fc-green"><i class="icon-exclamation-sign"></i> Notes: 3G mobile can just use 3G card, 4G mobile
+			can just use in 4G card.</strong></p>
 	</div>
 
 	<div class="row pillbox mgt30 bgc-white" id="feature">
-		<div class="col-md-4 pd20">
-			<h3>JUMP!</h3>
-
+		<div class="col-md-12 pd20">
+			<h3>Additional Data Package.</h3>
 			<p class="text-muted">
-				Upgrade to the latest devices earlier and more often while also protecting your investment with Premium Handset
-				Protection® and Lookout Mobile Security® Premium.
+				(Only work on the current month, will not continue next month.)
 			</p>
-
-			<p></p>
-		</div>
-		<div class="col-md-4 pd20">
-			<h3>Stateside International Services</h3>
-
-			<p class="text-muted">Keep in touch with family and friends abroad with T-Mobile's Stateside International
-				Talk.</p>
-		</div>
-		<div class="col-md-4 pd20">
-			<h3>Rhapsody unRadio</h3>
-
-			<p class="text-muted">No ads. Unlimited skips. And millions of songs. Included with a Simple Choice plan with
-				Unlimited 4G LTE. For all other T-Mobile customers, get a 20% discount. Compatible device required.</p>
+      <table class="table table-bordered">
+				<thead>
+				<tr>
+					<th>Additional data package</th>
+					<th></th>
+					<th>Send message</th>
+					<th>To which number</th>
+				</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>30MB data</td>
+						<td>5RMB</td>
+						<td>3302</td>
+						<td rowspan="3">10001777</td>
+					</tr>
+					<tr>
+						<td>60MB data</td>
+						<td>10RMB</td>
+						<td>3303</td>
+					</tr>
+					<tr>
+						<td>150MB data</td>
+						<td>20RMB</td>
+						<td>3304</td>
+					</tr>
+				</tbody>
+      </table>
 		</div>
 	</div>
 </div>

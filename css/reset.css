@@ -56,3 +56,13 @@ reset navbar
     }
 }
 
+.carousel-control .glyphicon-chevron-right,
+.carousel-control .icon-next {
+    margin-right: -15px;
+    color: #9fd10e;
+}
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .icon-next {
+    margin-right: -15px;
+    color: #9fd10e;
+}

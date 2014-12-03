@@ -1,0 +1,307 @@
+@font-face {
+		font-family: 'Lato-Black';
+		font-style: normal;
+		font-weight: normal;
+		src: url(font/Lato-Black.ttf) format('truetype');
+}
+@font-face {
+		font-family: 'Lato-BlackItalic';
+		font-style: normal;
+		font-weight: normal;
+		src: url(font/Lato-BlackItalic.ttf) format('truetype');
+}
+@font-face {
+		font-family: 'Lato-Bold';
+		font-style: normal;
+		font-weight: normal;
+		src: url(font/Lato-Bold.ttf) format('truetype');
+}
+@font-face {
+		font-family: 'Lato-BoldItalic';
+		font-style: normal;
+		font-weight: normal;
+		src: url(font/Lato-BoldItalic.ttf) format('truetype');
+}
+@font-face {
+		font-family: 'Lato-Hairline';
+		font-style: normal;
+		font-weight: normal;
+		src: url(font/Lato-Hairline.ttf) format('truetype');
+}
+@font-face {
+		font-family: 'Lato-HairlineItalic';
+		font-style: normal;
+		font-weight: normal;
+		src: url(font/Lato-HairlineItalic.ttf) format('truetype');
+}
+@font-face {
+		font-family: 'Lato-Italic';
+		font-style: normal;
+		font-weight: normal;
+		src: url(font/Lato-Italic.ttf) format('truetype');
+}
+@font-face {
+		font-family: 'Lato-Light';
+		font-style: normal;
+		font-weight: normal;
+		src: url(font/Lato-Light.ttf) format('truetype');
+}
+
+@font-face {
+		font-family: 'Lato-LightItalic';
+		font-style: normal;
+		font-weight: normal;
+		src: url(font/Lato-LightItalic.ttf) format('truetype');
+}
+
+@font-face {
+		font-family: 'Lato-Regular';
+		font-style: normal;
+		font-weight: normal;
+		src: url(font/Lato-Regular.ttf) format('truetype');
+}
+
+@font-face {
+		font-family: 'OpenSans-Bold';
+		font-style: normal;
+		font-weight: normal;
+		src: url(font/OpenSans-Bold.ttf) format('truetype');
+}
+
+@font-face {
+		font-family: 'OpenSans-BoldItalic';
+		font-style: normal;
+		font-weight: normal;
+		src: url(font/OpenSans-BoldItalic.ttf) format('truetype');
+}
+
+@font-face {
+		font-family: 'OpenSans-ExtraBold';
+		font-style: normal;
+		font-weight: normal;
+		src: url(font/OpenSans-ExtraBold.ttf) format('truetype');
+}
+
+@font-face {
+		font-family: 'OpenSans-ExtraBoldItalic';
+		font-style: normal;
+		font-weight: normal;
+		src: url(font/OpenSans-ExtraBoldItalic.ttf) format('truetype');
+}
+
+@font-face {
+		font-family: 'OpenSans-Italic';
+		font-style: normal;
+		font-weight: normal;
+		src: url(font/OpenSans-Italic.ttf) format('truetype');
+}
+@font-face {
+		font-family: 'OpenSans-Light';
+		font-style: normal;
+		font-weight: normal;
+		src: url(font/OpenSans-Light.ttf) format('truetype');
+}
+@font-face {
+		font-family: 'OpenSans-LightItalic';
+		font-style: normal;
+		font-weight: normal;
+		src: url(font/OpenSans-LightItalic.ttf) format('truetype');
+}
+@font-face {
+		font-family: 'OpenSans-Regular';
+		font-style: normal;
+		font-weight: normal;
+		src: url(font/OpenSans-Regular.ttf) format('truetype');
+}
+@font-face {
+		font-family: 'OpenSans-Semibold';
+		font-style: normal;
+		font-weight: normal;
+		src: url(font/OpenSans-Semibold.ttf) format('truetype');
+}
+@font-face {
+		font-family: 'OpenSans-SemiboldItalic';
+		font-style: normal;
+		font-weight: normal;
+		src: url(font/OpenSans-SemiboldItalic.ttf) format('truetype');
+}
+@font-face {
+		font-family: 'SourceSansPro-Black';
+		font-style: normal;
+		font-weight: normal;
+		src: url(font/SourceSansPro-Black.ttf) format('truetype');
+}
+@font-face {
+		font-family: 'SourceSansPro-BlackItalic';
+		font-style: normal;
+		font-weight: normal;
+		src: url(font/SourceSansPro-BlackItalic.ttf) format('truetype');
+}
+@font-face {
+		font-family: 'SourceSansPro-Bold';
+		font-style: normal;
+		font-weight: normal;
+		src: url(font/SourceSansPro-Bold.ttf) format('truetype');
+}
+@font-face {
+		font-family: 'SourceSansPro-BoldItalic';
+		font-style: normal;
+		font-weight: normal;
+		src: url(font/SourceSansPro-BoldItalic.ttf) format('truetype');
+}
+@font-face {
+		font-family: 'SourceSansPro-ExtraLight';
+		font-style: normal;
+		font-weight: normal;
+		src: url(font/SourceSansPro-ExtraLight.ttf) format('truetype');
+}
+@font-face {
+		font-family: 'SourceSansPro-ExtraLightItalic';
+		font-style: normal;
+		font-weight: normal;
+		src: url(font/SourceSansPro-ExtraLightItalic.ttf) format('truetype');
+}
+@font-face {
+		font-family: 'SourceSansPro-Italic';
+		font-style: normal;
+		font-weight: normal;
+		src: url(font/SourceSansPro-Italic.ttf) format('truetype');
+}
+@font-face {
+		font-family: 'SourceSansPro-Light';
+		font-style: normal;
+		font-weight: normal;
+		src: url(font/SourceSansPro-Light.ttf) format('truetype');
+}
+@font-face {
+		font-family: 'SourceSansPro-LightItalic';
+		font-style: normal;
+		font-weight: normal;
+		src: url(font/SourceSansPro-LightItalic.ttf) format('truetype');
+}
+@font-face {
+		font-family: 'SourceSansPro-Regular';
+		font-style: normal;
+		font-weight: normal;
+		src: url(font/SourceSansPro-Regular.ttf) format('truetype');
+}
+@font-face {
+		font-family: 'SourceSansPro-Semibold';
+		font-style: normal;
+		font-weight: normal;
+		src: url(font/SourceSansPro-Semibold.ttf) format('truetype');
+}
+@font-face {
+		font-family: 'SourceSansPro-SemiboldItalic';
+		font-style: normal;
+		font-weight: normal;
+		src: url(font/SourceSansPro-SemiboldItalic.ttf) format('truetype');
+}
+
+.font-Lato-Black{
+		font-family: 'Lato-Black';
+}
+.font-Lato-BlackItalic{
+		font-family: 'Lato-BlackItalic';
+}
+.font-Lato-Bold{
+		font-family: 'Lato-Bold';
+}
+.font-Lato-BoldItalic{
+		font-family: 'Lato-BoldItalic';
+}
+.font-Lato-Hairline{
+		font-family: 'Lato-Hairline';
+}
+.font-Lato-HairlineItalic{
+		font-family: 'Lato-HairlineItalic';
+}
+.font-Lato-Italic{
+		font-family: 'Lato-Italic';
+}
+.font-Lato-Light{
+		font-family: 'Lato-Light';
+}
+.font-Lato-Regular{
+		font-family: 'Lato-Regular';
+}
+.font-OpenSans-Bold{
+		font-family: 'OpenSans-Bold';
+}
+.font-OpenSans-BoldItalic{
+		font-family: 'OpenSans-BoldItalic';
+}
+.font-OpenSans-ExtraBold{
+		font-family: 'OpenSans-ExtraBold';
+}
+.font-OpenSans-ExtraBoldItalic{
+		font-family: 'OpenSans-ExtraBoldItalic';
+}
+.font-OpenSans-Italic{
+		font-family: 'OpenSans-Italic';
+}
+.font-OpenSans-Light{
+		font-family: 'OpenSans-Light';
+}
+.font-OpenSans-LightItalic{
+		font-family: 'OpenSans-LightItalic';
+}
+.font-OpenSans-Regular{
+		font-family: 'OpenSans-Regular';
+}
+.font-OpenSans-Semibold{
+		font-family: 'OpenSans-Semibold';
+}
+.font-OpenSans-SemiboldItalic{
+		font-family: 'OpenSans-SemiboldItalic';
+}
+.font-SourceSansPro-Black{
+		font-family: 'SourceSansPro-Black';
+}
+.font-SourceSansPro-BlackItalic{
+		font-family: 'SourceSansPro-BlackItalic';
+}
+.font-SourceSansPro-Bold{
+		font-family: 'SourceSansPro-Bold';
+}
+.font-SourceSansPro-BoldItalic{
+		font-family: 'SourceSansPro-BoldItalic';
+}
+.font-SourceSansPro-ExtraLight{
+		font-family: 'SourceSansPro-ExtraLight';
+}
+.font-SourceSansPro-ExtraLightItalic{
+		font-family: 'SourceSansPro-ExtraLightItalic';
+}
+.font-SourceSansPro-Italic{
+		font-family: 'SourceSansPro-Italic';
+}
+.font-SourceSansPro-Light{
+		font-family: 'SourceSansPro-Light';
+}
+.font-SourceSansPro-LightItalic{
+		font-family: 'SourceSansPro-LightItalic';
+}
+.font-SourceSansPro-Regular{
+		font-family: 'SourceSansPro-Regular';
+}
+.font-SourceSansPro-Semibold{
+		font-family: 'SourceSansPro-Semibold';
+}
+.font-SourceSansPro-SemiboldItalic{
+		font-family: 'SourceSansPro-SemiboldItalic';
+}
+
+.fs12{
+		font-size: 12px;
+}
+.fs16{
+		font-size: 16px;
+}
+.fs18{
+		font-size: 18px;
+}
+.fs24{
+		font-size: 24px;
+}
+

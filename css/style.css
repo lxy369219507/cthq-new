@@ -126,6 +126,52 @@ body {
 		border: 1px solid #DCDCDC;
 }
 
+.wper10{
+		width: 10%;
+}
+.wper20{
+		width: 20%;
+}
+.wper30{
+		width: 30%;
+}
+.wper40{
+		width: 40%;
+}
+.wper50{
+		width: 50%;
+}
+.wper60{
+		width: 60%;
+}
+.wper70{
+		width: 70%;
+}
+
+@media (max-width: 480px){
+		.wper10{
+				width: 70%;
+		}
+		.wper20{
+				width: 70%;
+		}
+		.wper30{
+				width: 70%;
+		}
+		.wper40{
+				width: 70%;
+		}
+		.wper50{
+				width: 70%;
+		}
+		.wper60{
+				width: 70%;
+		}
+		.wper70{
+				width: 70%;
+		}
+}
+
 /*
 header
 */
