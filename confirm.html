@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="css/font-awesome.min.css"/>
 	<link rel="stylesheet" href="css/reset.css"/>
 	<link rel="stylesheet" href="css/style.css"/>
-
+	<link rel="stylesheet" href="css/font-style.css"/>
 	<!--[if lt IE 9]>
 	<link rel="stylesheet" href="css/font-awesome-ie7.min.css"/>
 	<script src="//uilibs.qiniudn.com/html5/html5shiv.min.js"></script>
@@ -29,19 +29,21 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a href="index_back.html">
+				<a href="index.html">
 					<img src="images/logo.png" height="41" width="122">
 				</a>
 			</div>
 			<!--上面的data-target指向的是下面的导航栏，默认在768像素一下的时候是横向显示，小于768时隐藏，只有点击上面的button才会展开 -->
-			<div class="collapse navbar-collapse" id="navbar">
+			<div class="collapse navbar-collapse font-Lato-Black" id="navbar">
 				<ul class="nav navbar-nav">
 					<li><a href="wifi.html">Wi-Fi</a></li>
 					<li><a href="refill.html">Refill</a></li>
 					<li><a href="Phone.html">CellPhone</a></li>
 					<li><a href="plan.html">Mobile Plan</a></li>
 					<li><a href="dataplan.html">Data Plan</a></li>
-					<li><a href="shoppingcart.html" id="cart"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a>
+					<li><a href="shoppingcart.html" id="cart"><span class="glyphicon glyphicon-shopping-cart"></span> Cart
+						<div class="bgc-green cart-number">0</div>
+					</a>
 
 						<div class="cart" id="items">
 							<p>Wifi 200 X 1</p>
@@ -64,7 +66,8 @@
 <div class="container">
 	<div class="panel panel-default">
 		<div class="panel-heading">
-			<h3 class="panel-title"><i class="icon-ok icon-2x fc-green"> CONFIRMATION</i></h3>
+			<h3 class="panel-title"><i class="icon-ok icon-2x hidden-xs hidden-sm fc-green"> CONFIRMATION</i></h3>
+			<h3 class="panel-title"><i class="icon-ok hidden-md hidden-lg fc-green"> CONFIRMATION</i></h3>
 		</div>
 		<div class="panel-body">
 			<div class="col-md-11 col-md-offset-1 bdt">
@@ -163,16 +166,20 @@
 			</div>
 		</div>
 		<div class="row line">
-			<div class="col-md-12 pdt10">
-				<ul>
+			<div class="col-sm-12 pdt10">
+				<ul class="list-inline">
 					<li><a href="#">About China Telecom</a></li>
 					<li><a href="#">Contact Us</a></li>
 					<li><a href="#">Privacy Policy</a></li>
 				</ul>
 			</div>
-			<!--<div class="col-md-6">-->
-			<!--<img class="img-responsive" src="images/friendlink.png">-->
-			<!--</div>-->
+			<a href="" class=""><i class="col-sm-2 icon-twitter-sign icon-2x"></i></a>
+			<a href="" class=""><i class="col-sm-2 icon-linkedin-sign icon-2x"></i></a>
+			<a href="" class=""><i class="col-sm-2 icon-facebook-sign icon-2x"></i></a>
+			<a href="" class=""><i class="col-sm-2 icon-google-plus-sign icon-2x"></i></a>
+			<div class="col-md-6 pdt5">
+				<img class="img-responsive" src="images/friendlink.png">
+			</div>
 			<div class="col-md-12 pdt10">
 				© 2014 China Telecom, Inc. All rights reserved [Telecommunications Business License: A2.B1.B2-20090001 ]
 				NO.ICP

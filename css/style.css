@@ -221,24 +221,15 @@ footer .line {
 		border-top: 1px dotted #6a6a6a;
 }
 
-footer ul {
-		margin: 0;
-		padding: 0;
-		clear: both;
-		list-style: none;
-}
-
-footer ul > li {
-		display: block;
-		float: left;
-		margin-right: 20px;
-}
-
-footer ul > li > a {
+footer a {
 		color: #333;
 		font-size: 18px;
 }
 
+footer a:hover {
+		color: #9fd10e;
+		font-size: 18px;
+}
 /*
 index
 */

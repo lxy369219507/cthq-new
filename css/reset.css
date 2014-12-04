@@ -28,10 +28,15 @@ reset navbar
 
 @media (max-width: 768px) {
     .navbar-nav {
+        font-size:13px;
+    }
+}
+@media (max-width: 480px) {
+    .navbar-nav {
+        font-size:14px;
         float: left;
     }
 }
-
 /*slider*/
 .carousel-control.left {
     background-image: none;

@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Order History</title>
+	<title>Demo</title>
 
 	<link rel="stylesheet" href="//uilibs.qiniudn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
 	<link rel="stylesheet" href="css/font-awesome.min.css"/>
@@ -64,119 +64,22 @@
 	</nav>
 </header>
 <div class="container">
-	<div class="panel panel-default">
-		<div class="panel-heading">
-			<h3 class="panel-title fc-green">
-				<i class="icon-user icon-2x"></i> My Account
-			</h3>
+	<div class="page-header">
+		<h1>Any questions? Just give us a call!</h1>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<p><i class="icon-phone"> By phone:</i></p>
+			<P>You may speak to a live operator at China Telecom customer support <strong>24x7</strong> by dialing <strong>010-10000</strong> and then pressing 0.</P>
+			<p>You can also reach us at <strong>010-65525508</strong> weekdays from <strong>9AM to 6PM (Beijing time).</strong></p>
+			<p>We will be happy to assist you!</p>
+
+			<p><i class="icon-envelope"> By E-mail:</i></p>
+			<p>You may contact us at <strong>customersvc@189.cn</strong>. A customer support agent will respond to your query as soon as possible.</p>
+		  <p>China Telecom Online Store</p>
+			<p>LZ Mobile Information Technology Limited.</p>
 		</div>
-		<div class="panel-body">
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<h3 class="panel-title fc-green">
-						<a class="" data-toggle="collapse" href="#updateform">Update
-							Password</a>
-					</h3>
-				</div>
-				<div class="panel-body">
-					<div id="updateform" class="collapse">
-						<form class="form-horizontal col-md-8"
-						      role="form" id="resetPwdForm">
-							<div class="form-group">
-								<label for="oldPassword" class="col-sm-4 control-label">Old
-									Password:</label>
 
-								<div class="col-sm-8">
-									<input class="form-control" type="password" id="oldPassword"
-									       name="oldPassword" placeholder="Password"/>
-								</div>
-							</div>
-							<div class="form-group">
-								<label for="newPassword" class="col-sm-4 control-label">New
-									Password:</label>
-
-								<div class="col-sm-8">
-									<input class="form-control" type="password" id="newPassword"
-									       name="newPassword" placeholder="New Password"/>
-								</div>
-							</div>
-							<div class="form-group">
-								<label for="newPasswordRepeat" class="col-sm-4 control-label">New
-									Password Repeat:</label>
-
-								<div class="col-sm-8">
-									<input class="form-control" type="password"
-									       id="newPasswordRepeat" name="newPasswordRepeat"
-									       placeholder="New Password Repeat"/>
-								</div>
-							</div>
-							<div class="form-group">
-								<div class="col-sm-offset-4 col-sm-8">
-									<button type="submit" class="btn btn-green">Update</button>
-								</div>
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<h3 class="panel-title fc-green">
-						Order History
-					</h3>
-				</div>
-				<div class="panel-body">
-					<div class="table-responsive">
-						<table class="table table-hover">
-							<thead>
-							<tr>
-								<th>Order Number</th>
-								<th>Order Date</th>
-								<th>Recipient</th>
-								<th>Amount</th>
-							</tr>
-							</thead>
-							<tbody>
-
-							<tr>
-								<td><a href="toOrderDetail.dhtml?orderId=150">150</a>
-								</td>
-								<td>2014-12-01 16:23:05</td>
-								<td class="orderdetailfont1">xiaoyang li</td>
-								<td>221.94</td>
-							</tr>
-
-							<tr>
-								<td><a href="toOrderDetail.dhtml?orderId=148">148</a>
-								</td>
-								<td>2014-11-30 21:16:14</td>
-								<td class="orderdetailfont1">xiaoyang li</td>
-								<td>389.99</td>
-							</tr>
-
-							<tr>
-								<td><a href="toOrderDetail.dhtml?orderId=5">5</a>
-								</td>
-								<td>2014-09-22 15:06:21</td>
-								<td class="orderdetailfont1">xiaoyang li</td>
-								<td>5.99</td>
-							</tr>
-
-							<tr>
-								<td><a href="toOrderDetail.dhtml?orderId=4">4</a>
-								</td>
-								<td>2014-09-18 16:01:38</td>
-								<td class="orderdetailfont1">xiaoyang li</td>
-								<td>9.18</td>
-							</tr>
-
-							</tbody>
-						</table>
-						<ul id="example"></ul>
-					</div>
-				</div>
-			</div>
-		</div>
 	</div>
 </div>
 <footer>
@@ -235,23 +138,13 @@
 <script>
 	seajs.use('./js/util');
 	seajs.use('./js/plan');
-	seajs.use('./js/bootstrap-paginator.min', function(){
-		var options = {
-			bootstrapMajorVersion:3,
-			size:'large',// normal/ small
-			alignment:'center',
-			useBootstrapTooltip:true,
-			numberOfPages:3,
-			currentPage: 1,
-			totalPages: 10,
-			onPageClicked: function(e,originalEvent,type,page){
-				alert("Page item clicked, type: "+type+" page: "+page);
-			}
-		}
-		$('#example').bootstrapPaginator(options);
+	seajs.use('./js/shopping', function (shopping) {
+		$('.btn-green').click(function () {
+			var id = $('#active_price').text();
+			shopping.moveBox($('#' + id));
+			$('#' + id).addClass('plan-active');
+		});
 	});
-
-
 </script>
 </body>
 </html>
